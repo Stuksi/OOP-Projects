@@ -13,10 +13,10 @@ private:
     static bool exists (std::string fileName);
     static bool empty_File (std::string fileName);
 public:
-    static void open (std::ifstream& file, std::vector<std::string> infoStorage, std::vector<Movie> movies, std::string fileName); 
-    static void close (std::ifstream& file, std::vector<Movie> movies, std::string fileName); 
-    static void save (std::ifstream& file, std::vector<Movie> movies, std::string fileName); 
-    static void saveas (std::ifstream& file, std::vector<std::string> infoStorage, std::vector<Movie> movies); 
+    static void open (std::ifstream& file, std::vector<std::string> infoStorage, std::vector<Movie>& movies, std::string& fileName); 
+    static void close (std::ifstream& file, std::vector<Movie>& movies, std::string& fileName); 
+    static void save (std::ifstream& file, std::vector<Movie>& movies, std::string fileName); 
+    static void saveas (std::ifstream& file, std::vector<std::string> infoStorage, std::vector<Movie>& movies); 
     static void help (); 
     
     static void addevent (std::vector<std::string> infoStorage, std::vector<Movie>& movies); 

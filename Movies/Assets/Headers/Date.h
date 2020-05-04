@@ -14,8 +14,11 @@ public:
     Date (int _d, int _m, int _y);
     Date (std::string date);
     bool operator== (const Date& date);
+    bool operator!= (const Date& date);
     bool operator>= (const Date& date);
     bool operator<= (const Date& date);
+    bool operator< (const Date& date);
+    bool operator> (const Date& date);
 
     static bool isValid (std::string date);
 

@@ -8,8 +8,8 @@ void Movie::freeseats () {
     hall.freeseats();
 }
 
-void Movie::book (int _r, int _c, std::string _note) {
-    hall.book(_r, _c, _note);
+void Movie::book (int _r, int _c) {
+    hall.book(_r, _c);
 }
 
 void Movie::unbook (int _r, int _c) {
@@ -21,7 +21,7 @@ void Movie::buy (int _r, int _c, int code) {
 }
 
 void Movie::bookings () {
-    hall.bookings();
+    hall.bookings ();
 }
 
 void Movie::check (int code) {
@@ -38,11 +38,7 @@ Date Movie::getDate () {
     return date;
 }
 
-Hall Movie::getHall () {
-    return hall;
-}
-
-int Movie::getHallID () {
+int Movie::getHall () {
     return hall.getID();
 }
 
@@ -51,27 +47,43 @@ std::string Movie::getName () {
 }
 
 std::ostream& operator<< (std::ostream& os, std::vector<Movie>& movies) {
-    std::sort(movies.begin(), movies.end(), [](Movie& a, Movie& b)->bool{return a.getDate() <= b.getDate();});
-    size_t k = 0;
-    for (size_t i = k; i < movies.size()-1; i++)
+    int minIndex;
+    for (size_t i = 0; i < movies.size()-1; i++)
     {
-        os << "Date: \"" << movies[i].getDate() << "\"\n";
-        for (size_t j = k+1; j < movies.size(); j++)
-        {
-            if(movies[i].getDate() == movies[j].getDate()) {
-                k++;
-                os << "    Movie: \"" << movies[i].getName() << "\" - Hall: \"" << movies[i].getHallID() << "\"|\n";
+        minIndex = i;
+        for (size_t j = i+1; j < movies.size(); j++) {
+            if(movies[minIndex].getDate() < movies[j].getDate()) {
+                minIndex = j;
             }
         }
-          
+        Movie swap = movies[minIndex];
+        movies[minIndex] = movies[i];
+        movies[i] = swap;
     }
     
+    size_t j = 0, k = 0;
+    for (size_t i = 0; i < movies.size(); i+=k)
+    {
+        k = 0;
+        os << "Date: \"" << movies[i].getDate() << "\"\n";
+        while (movies[i].getDate() == movies[j].getDate())
+        {
+            if(movies[i].getDate() != movies[j+1].getDate()) {
+                os << "    Movie: \"" << movies[j].getName() << "\" - Hall: \"" << movies[j].getHall() << "\"/\n";
+            } else {
+                os << "    Movie: \"" << movies[j].getName() << "\" - Hall: \"" << movies[j].getHall() << "\"|\n";
+            }
+            j++;
+            k++;
+        } 
+    }
+    return os;
 }
 
 std::istream& operator>> (std::istream& is, std::vector<Movie>& movies) {
     std::string fileTxT = "", temp, date;
     std::vector<std::string> values;
-    size_t i = 1;
+    size_t i = 0;
 
     while (is >> temp)
     {
@@ -80,42 +92,46 @@ std::istream& operator>> (std::istream& is, std::vector<Movie>& movies) {
     
     temp = "";
 
-    while (fileTxT[i] != '\0')
+    while (i < fileTxT.length())
     {
-        while (fileTxT[i] != '"')
+        date = "";
+        while (fileTxT[i] != '"' && i < fileTxT.length())
         {
             i++;
         }
         i++;
-        while (fileTxT[i] != '"')
+        while (fileTxT[i] != '"' && i < fileTxT.length())
         {
             date += fileTxT[i];
             i++;
         }
         Date newDate(date);
-        while (fileTxT[i] != '/')
+        i++; 
+        while (fileTxT[i] != '/' && i < fileTxT.length())
         {
-            while (fileTxT[i] != '|' || fileTxT[i] != '/')
+            while (fileTxT[i] != '|' && fileTxT[i] != '/')
             {
                 if(fileTxT[i] == '"') {
+                    i++;
                     while (fileTxT[i] != '"')
                     {
                         temp += fileTxT[i];
                         i++;
-                    } 
+                    }
                     values.push_back(temp);
                     temp = "";
                 }
                 i++;
             }
-            if(fileTxT[i] != '/') {    
-                Hall hall(stoi(values[1]));
-                Movie newMovie(newDate, hall, values[0]);
-                values.clear();
-                temp = "";
+            Hall newHall (stoi(values[1]));
+            Movie newMovie (newDate, newHall, values[0]);
+            movies.push_back(newMovie);
+            values.clear();
+            if(fileTxT[i] == '/') {
+                break;
             }
+            i++;
         }
-        i++;   
     }
-    
+    return is;
 }

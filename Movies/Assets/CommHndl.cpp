@@ -26,7 +26,7 @@ bool CommHndl::isValidInteger (std::string number) {
     return true;
 }
 
-void CommHndl::open (std::ifstream& r_File, std::vector<std::string> infoStorage, std::vector<Movie> movies, std::string fileName) {
+void CommHndl::open (std::ifstream& r_File, std::vector<std::string> infoStorage, std::vector<Movie>& movies, std::string& fileName) {
     if(exists(infoStorage[0])) {
         fileName = infoStorage[0];
         r_File.open(fileName);
@@ -39,7 +39,7 @@ void CommHndl::open (std::ifstream& r_File, std::vector<std::string> infoStorage
     }
 }
 
-void CommHndl::close (std::ifstream& r_File, std::vector<Movie> movies, std::string fileName) {
+void CommHndl::close (std::ifstream& r_File, std::vector<Movie>& movies, std::string& fileName) {
     if(r_File.is_open()) {
         movies.clear();
         r_File.close();
@@ -50,7 +50,7 @@ void CommHndl::close (std::ifstream& r_File, std::vector<Movie> movies, std::str
     }
 }
 
-void CommHndl::save (std::ifstream& r_File, std::vector<Movie> movies, std::string fileName) {
+void CommHndl::save (std::ifstream& r_File, std::vector<Movie>& movies, std::string fileName) {
     if(r_File.is_open()) {
         std::ofstream w_File(fileName);
         w_File << movies;
@@ -61,7 +61,7 @@ void CommHndl::save (std::ifstream& r_File, std::vector<Movie> movies, std::stri
     }
 }
 
-void CommHndl::saveas (std::ifstream& r_File, std::vector<std::string> infoStorage, std::vector<Movie> movies) {
+void CommHndl::saveas (std::ifstream& r_File, std::vector<std::string> infoStorage, std::vector<Movie>& movies) {
     if(r_File.is_open()) {
         if(!exists(infoStorage[0])){
             std::ofstream w_File(infoStorage[0]);
@@ -93,6 +93,7 @@ void CommHndl::addevent (std::vector<std::string> infoStorage, std::vector<Movie
         Hall newHall (stoi(infoStorage[1]));
         Movie newMovie (date, newHall, infoStorage[2]);
         movies.push_back(newMovie);
+        std::cout << "Successfully created an event!" << std::endl;
     } else {
         std::cout << "Invalid use of command or parameters!" << std::endl;
     }
@@ -106,11 +107,12 @@ void CommHndl::freeseats (std::vector<std::string> infoStorage, std::vector<Movi
         {
             if(movies[i].getDate() == date && movies[i].getName() == infoStorage[1]) {
                 in = true;
+                std::cout << "For movie: " << movies[i].getName() << " on " << movies[i].getDate() << std::endl;
                 movies[i].freeseats();
             }
         }
         if (!in) {
-            std::cout << "No movies whit that name on that date!" << std::endl;
+            std::cout << "No movies whit that name on that date exist!" << std::endl;
         }
     } else {
         std::cout << "Invalid use of command or parameters!" << std::endl;
@@ -125,7 +127,7 @@ void CommHndl::book (std::vector<std::string> infoStorage, std::vector<Movie>& m
         {
             if(movies[i].getDate() == date && movies[i].getName() == infoStorage[3]) {
                 in = true;
-                movies[i].book(stoi(infoStorage[0]), stoi(infoStorage[1]), infoStorage[4]);
+                movies[i].book(stoi(infoStorage[0]), stoi(infoStorage[1]));
                 return;
             }
         }
@@ -169,7 +171,7 @@ void CommHndl::buy (std::vector<std::string> infoStorage, std::vector<Movie>& mo
                 srand(time(NULL));
                 do
                 {
-                    code = rand() % 10000 + 2;
+                    code = rand() % 10000 + 3;
                 } while (std::binary_search(codes.begin(), codes.end(), code));
                 codes.push_back(code);
                 movies[i].buy(stoi(infoStorage[0]), stoi(infoStorage[1]), code);
@@ -228,7 +230,9 @@ void CommHndl::check (std::vector<std::string> infoStorage, std::vector<Movie>& 
         {
             movies[i].check(stoi(infoStorage[0]));
         }
+        return;
     }
+    std::cout << "Invalid or non existing code!" << std::endl;
 }
 
 void CommHndl::report (std::vector<std::string> infoStorage, std::vector<Movie>& movies) {

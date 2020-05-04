@@ -52,6 +52,10 @@ bool Date::operator== (const Date& date) {
     return date.dd == dd && date.mm == mm && date.yy == yy;
 }
 
+bool Date::operator!= (const Date& date) {
+    return !operator==(date);
+}
+
 bool Date::operator>= (const Date& date) {
     return yy >= date.yy || yy == date.yy && mm >= date.mm || yy == date.yy && mm == date.mm && dd >= date.dd;
 }
@@ -60,6 +64,25 @@ bool Date::operator<= (const Date& date) {
     return yy <= date.yy || yy == date.yy && mm <= date.mm || yy == date.yy && mm == date.mm && dd <= date.dd;
 }
 
+bool Date::operator< (const Date& date) {
+    return yy < date.yy || yy == date.yy && mm < date.mm || yy == date.yy && mm == date.mm && dd < date.dd;
+}
+
+bool Date::operator> (const Date& date) {
+    return yy > date.yy || yy == date.yy && mm > date.mm || yy == date.yy && mm == date.mm && dd > date.dd;
+}
+
 std::ostream& operator<< (std::ostream& os, const Date& date) {
+    if(date.dd < 10 && date.mm < 10) {
+        os << "0" << date.dd << ".0" << date.mm << "." << date.yy;
+        return os;
+    } else if(date.dd < 10) {
+        os << "0" << date.dd << "." << date.mm << "." << date.yy;
+        return os;
+    } else if(date.mm < 10) {
+        os << date.dd << ".0" << date.mm << "." << date.yy;
+        return os;
+    }
     os << date.dd << "." << date.mm << "." << date.yy;
+    return os;
 }

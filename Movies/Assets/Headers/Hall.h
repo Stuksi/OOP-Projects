@@ -9,7 +9,7 @@ class Hall {
 private:
     int rows, cols, id;
     std::vector<std::vector<int>> seats;
-    std::vector<std::vector<std::string>> notes;
+    // std::vector<std::vector<std::string>> notes;
 
     bool checkSeat (int _r, int _c);
 public:
@@ -19,7 +19,7 @@ public:
     bool operator== (const Hall& hall);
 
     void freeseats ();
-    void book (int _r, int _c, std::string _note);
+    void book (int _r, int _c);
     void unbook (int _r, int _c);
     void buy (int _r, int _c, int code);
     void bookings ();
@@ -29,7 +29,7 @@ public:
     int findRow (int code);
     int findSeat (int code);
 
-    int getID() {return id};
+    int getID() {return id;};
 };
 
 #endif

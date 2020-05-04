@@ -13,7 +13,7 @@ public:
     Movie (Date _date, Hall _hall, std::string _name);
 
     void freeseats ();
-    void book (int _r, int _c, std::string _note);
+    void book (int _r, int _c);
     void unbook (int _r, int _c);
     void buy (int _r, int _c, int code);
     void bookings ();
@@ -21,12 +21,11 @@ public:
     void report ();
 
     Date getDate ();
-    Hall getHall ();
-    int getHallID ();
+    int getHall ();
     std::string getName ();
 };
 
-std::ostream& operator<< (std::ostream& os, const std::vector<Movie>& movies); 
+std::ostream& operator<< (std::ostream& os, std::vector<Movie>& movies); 
 std::istream& operator>> (std::istream& is, std::vector<Movie>& movies); 
 
 #endif
