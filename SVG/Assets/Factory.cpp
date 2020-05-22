@@ -3,6 +3,9 @@
 #include "Headers\Circle.h"
 #include "Headers\Line.h"
 
+/*
+    Този метод е помощен с който се проверява по даден низ дали е правилно зададено число.
+*/
 bool Factory::validNumber (std::string number) {
     bool dot = false;
     for (size_t i = 0; i < number.length(); i++)
@@ -18,6 +21,9 @@ bool Factory::validNumber (std::string number) {
     return true;
 }
 
+/*
+    Този метод е помощен с който се променя низът с типа в малки букви за по-лесно и правилно разпознаване от останалите методи.
+*/
 std::string Factory::toLowerCase (std::string type) {
     std::string copyOfType = type;
     for (size_t i = 0; i < type.length(); i++)
@@ -29,6 +35,10 @@ std::string Factory::toLowerCase (std::string type) {
     return copyOfType;
 }
 
+/*
+    "getFigure" приема масив от низове, по които разпознава типа на фигурата, както и информацията въведена след нея.
+    Ако типът на фигурата или въведените параметри не са валидни се извежда съобщение в конзолата и функцията връща nullptr.
+*/
 Figure* Factory::getFigure (std::vector<std::string> type) {
     Figure* newFigure;
     if(toLowerCase(type[0]) == "rect" || toLowerCase(type[0]) == "rectangle" && (type.size() == 5 || type.size() == 6)  

@@ -3,16 +3,19 @@
 
 #include <fstream>
 
+// Проверка дали съществува файлът по името му. (Stack Overflow)
 bool CommandHandle::exists(std::string fileName) {
     std::fstream file(fileName);
     return file.good();
 }
 
+// Проверка дали файлът е празен по името му. (Stack Overflow)
 bool CommandHandle::empty_File(std::string fileName) {
     std::fstream file(fileName);
     return file.peek() == std::ifstream::traits_type::eof();
 }
 
+// Метод с който отваряме файлът и прочитаме информацията от него, като я записваме в системата за обработка.
 void CommandHandle::open (std::vector<Figure *>& figures, std::vector<std::string> infoStorage, std::ifstream& r_File, std::string& fileName) {
     if(exists(infoStorage[0])) {
         fileName = infoStorage[0];
@@ -26,6 +29,7 @@ void CommandHandle::open (std::vector<Figure *>& figures, std::vector<std::strin
     }
 }
 
+// Метод с който затваряме файлът и изчистваме от системата информацията от файла.
 void CommandHandle::close (std::vector<Figure *>& figures, std::ifstream& r_File, std::string& fileName) {
     if(r_File.is_open()) {
         figures.clear();
@@ -37,6 +41,7 @@ void CommandHandle::close (std::vector<Figure *>& figures, std::ifstream& r_File
     }
 } 
 
+// Метод с който записваме обработената от нас информация обратно в същия файл.
 void CommandHandle::save (std::vector<Figure *>& figures, std::ifstream& r_File, std::string& fileName) {
     if(r_File.is_open()) {
         std::ofstream w_File(fileName);
@@ -48,6 +53,7 @@ void CommandHandle::save (std::vector<Figure *>& figures, std::ifstream& r_File,
     }
 }
 
+// Метод с който записваме обработената от нас информация обратно в различен файл.
 void CommandHandle::saveas (std::vector<Figure *>& figures, std::vector<std::string> infoStorage, std::ifstream& r_File) {
     if(r_File.is_open()) {
         if(!exists(infoStorage[0])){
@@ -63,6 +69,7 @@ void CommandHandle::saveas (std::vector<Figure *>& figures, std::vector<std::str
     }
 }
 
+// Метод с който извеждаме на потребителя поддържаните от програмата команди.
 void CommandHandle::help () {
     std::cout << "The following commands are supported:\n"
             << "Main commands: \n"
@@ -83,6 +90,7 @@ void CommandHandle::help () {
             << std::endl;
 }
 
+// Метод с който извеждаме на потребителя поддържаните от фигурите параметри.
 void CommandHandle::parameters () {
     std::cout << "The following parameters for the shapes are supported:\n"
             << "   Rectangle     \"x\", \"y\", \"width\", \"height\", \"color\"\n"
@@ -92,6 +100,7 @@ void CommandHandle::parameters () {
             << std::endl;
 }
 
+// Метод с който извеждаме на потребителя информацията за всички фигури в системата.
 void CommandHandle::print (std::vector<Figure *>& figures) {
     size_t counter = 1;
     for (size_t i = 0; i < figures.size(); i++)
@@ -104,6 +113,7 @@ void CommandHandle::print (std::vector<Figure *>& figures) {
     }
 }
 
+// Метод с който създаваме нова фигура по дадени параметри и тип.
 void CommandHandle::create (std::vector<Figure *>& figures, std::vector<std::string> infoStorage) {
     Figure* newFigure = Factory::getFigure(infoStorage);
     if(newFigure != nullptr) {
@@ -113,6 +123,7 @@ void CommandHandle::create (std::vector<Figure *>& figures, std::vector<std::str
     }
 }
 
+// Метод с който изтриваме съществуваща фигура по номер на място в системата.
 void CommandHandle::erase (std::vector<Figure *>& figures, std::vector<std::string> infoStorage) {
     size_t erase_index = stoi(infoStorage[0]) - 1;
     if(erase_index < figures.size() && erase_index >= 0) {
@@ -123,6 +134,7 @@ void CommandHandle::erase (std::vector<Figure *>& figures, std::vector<std::stri
     } 
 }
 
+// Метод с който променяме позицията на посочени от нас фигури.
 void CommandHandle::translate (std::vector<Figure *>& figures, std::vector<std::string> infoStorage) {
     if(infoStorage.size() == 2
     && Factory::validNumber(infoStorage[0]) 
@@ -148,6 +160,7 @@ void CommandHandle::translate (std::vector<Figure *>& figures, std::vector<std::
     }
 }
 
+// Метод с който проверяваме дали дадена фигура е в даден обсег.
 void CommandHandle::within (std::vector<Figure *>& figures, std::vector<std::string> infoStorage) {
     size_t counter = 1;
     if(infoStorage[0] == "circle" 

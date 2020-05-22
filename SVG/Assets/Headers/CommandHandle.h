@@ -3,6 +3,10 @@
 
 #include "Figure.h"
 
+/*
+    Класът CommandHandle, е помощен клас в който са представени всички команди като функции.
+*/
+
 class CommandHandle {
 private:
     static bool exists (std::string fileName);

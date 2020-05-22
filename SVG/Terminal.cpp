@@ -3,6 +3,7 @@
 
 #include <fstream>
 
+// Функция с която прескачаме празните места при търсене в низ.
 void skipEmptySpaces(std::string& string, size_t &k) {
     while (string[k] == ' ')
     {
@@ -21,6 +22,7 @@ int main() {
     std::vector<Figure *> figures;
     size_t k = 0;
 
+    // Старт на програмата.
     do
     {
         action = "";
@@ -28,6 +30,7 @@ int main() {
         infoStorage.clear();
         k = 0;
 
+        // Приемане на информация от конзолата и превръщането и в команда.
         std::getline(std::cin, commandLine);
 
         skipEmptySpaces(commandLine, k);
@@ -84,6 +87,7 @@ int main() {
             }
         }
     } while (action != "exit");
+    // Край на програмата.
     std::cout << "Exiting program..." << std::endl;
 
     return 0;
