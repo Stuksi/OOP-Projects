@@ -1,0 +1,58 @@
+\hypertarget{class_shape}{}\doxysection{Shape Class Reference}
+\label{class_shape}\index{Shape@{Shape}}
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+Inheritance diagram for Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_shape}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shape_aa23638d98c7ede6f773e2fe9a341b7c8}\label{class_shape_aa23638d98c7ede6f773e2fe9a341b7c8}} 
+{\bfseries Shape} (Color \+\_\+color, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
+\item 
+\mbox{\Hypertarget{class_shape_a95ca8deca4019d7eed1619a3610700e1}\label{class_shape_a95ca8deca4019d7eed1619a3610700e1}} 
+virtual void {\bfseries print} ()=0
+\item 
+\mbox{\Hypertarget{class_shape_ac77cd52b168c73ee02e21d4033315cfe}\label{class_shape_ac77cd52b168c73ee02e21d4033315cfe}} 
+virtual void {\bfseries translate} (double, double)=0
+\item 
+\mbox{\Hypertarget{class_shape_a8c5578041093b36cdc06408c48df2678}\label{class_shape_a8c5578041093b36cdc06408c48df2678}} 
+virtual bool {\bfseries within} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&)=0
+\item 
+\mbox{\Hypertarget{class_shape_a23900588dfa834a89657d97514969aad}\label{class_shape_a23900588dfa834a89657d97514969aad}} 
+virtual bool {\bfseries within} (const \mbox{\hyperlink{class_circle}{Circle}} \&)=0
+\item 
+\mbox{\Hypertarget{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}\label{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}} 
+virtual void {\bfseries write} (std\+::ostream \&)=0
+\item 
+\mbox{\Hypertarget{class_shape_a555866c38c431b0bdb60548027230f4d}\label{class_shape_a555866c38c431b0bdb60548027230f4d}} 
+Color {\bfseries get\+\_\+color} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shape_aded2bc61d9d283c659228508d8f5f9f5}\label{class_shape_aded2bc61d9d283c659228508d8f5f9f5}} 
+\mbox{\hyperlink{class_stroke}{Stroke}} {\bfseries stroke}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shape_ac56e2bf5eb24cf37b6e08c671501566b}\label{class_shape_ac56e2bf5eb24cf37b6e08c671501566b}} 
+Color {\bfseries color}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pure virtual class, base class. 
+\begin{DoxyParams}{Parameters}
+{\em color} & Represents the color/filling of the shape. \\
+\hline
+{\em stroke} & Represents the stroke object over the shape. \\
+\hline
+\end{DoxyParams}

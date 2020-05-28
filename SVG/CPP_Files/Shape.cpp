@@ -6,6 +6,13 @@
 
 #include <functional>
 
+/**
+ * @fn std::ostream& operator<< ()
+ * Used to write information of shapes to a stream.
+ * @fn std::istream& operator>> ()
+ * Used to read from a stream to an array of shapes.
+ */
+
 Color Shape::get_color() const {
     return color; 
 };

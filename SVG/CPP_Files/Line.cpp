@@ -3,6 +3,19 @@
 #include "..\Headers\Circle.h"
 #include "..\Headers\Factory.h"
 
+/**
+ * @fn void Line::print()
+ * Prints in the terminal the shape parameters.
+ * @fn void Line::translate()
+ * Offsets the shape in a certain direction.
+ * @fn bool Line::within(const Rectangle& rectangle)
+ * Check whether a shape is inside the range of a rectangle.
+ * @fn bool Line::within(const Circle& circle)
+ * Check whether a shape is inside the range of a circle.
+ * @fn void Line::write()
+ * Output information of the shape to a stream. 
+ */
+
 void Line::print() {
     std::cout << "Line: x1 = \""
               << x1 << "\", y1 = \""

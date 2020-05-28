@@ -8,12 +8,6 @@
 /**
  * @class Factory
  * A class helper, to recognise the class type.
- * @fn Color find_color()
- * Color recognision from string.
- * @fn std::string color_to_string()
- * Color to string.
- * @fn void to_lower_case()
- * Changes the string to lower case.
  */
 
 class Factory {

@@ -5,6 +5,28 @@
 
 #include <fstream>
 
+/**
+ * @fn bool CMD::exists()
+ * By a given string(file name), find if the file exists in the current directory.
+ * (Stack Overflow)
+ * @fn bool CMD::empty_file()
+ * Checks whether the file is empty.
+ * (Stack Overflow)
+ * @fn void CMD::open()
+ * Opens a file, and reads its information to the system, ready to be modified.
+ * @fn void CMD::close()
+ * Closes the opened file and removes the information of it from the system.
+ * @fn void CMD::save()
+ * Saves the current information in the system to the same file it was read from.
+ * @fn void CMD::saveas()
+ * Saves the current information in the system to a specific file.
+ * @fn void CMD::help()
+ * Outputs a helper menu, to show the available user commands.
+ * @fn void CMD::parameters()
+ * Show information about all the supported shapes.
+ */
+
+
 // Stack Overflow
 bool CMD::exists(std::string file_name) {
     std::fstream file(file_name);

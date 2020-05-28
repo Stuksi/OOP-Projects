@@ -1,0 +1,130 @@
+\hypertarget{class_circle}{}\doxysection{Circle Class Reference}
+\label{class_circle}\index{Circle@{Circle}}
+
+
+{\ttfamily \#include $<$Circle.\+h$>$}
+
+Inheritance diagram for Circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_circle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circle_aabccf623d0ef5bd9a409ebaa0252eac7}\label{class_circle_aabccf623d0ef5bd9a409ebaa0252eac7}} 
+{\bfseries Circle} (double \+\_\+cx, double \+\_\+cy, double \+\_\+r, Color \+\_\+color, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
+\item 
+void \mbox{\hyperlink{class_circle_a8e1b2afd696611b697691ed8ae897000}{print}} ()
+\item 
+void \mbox{\hyperlink{class_circle_a77c4d50b89023412c735c2f19182e475}{translate}} (double, double)
+\item 
+bool \mbox{\hyperlink{class_circle_aa2a08bf96b70e6e5040acdc4ddbb77f0}{within}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&)
+\item 
+bool \mbox{\hyperlink{class_circle_a0f9cca26b853535b1d8ca66dd5363bc8}{within}} (const \mbox{\hyperlink{class_circle}{Circle}} \&)
+\item 
+void \mbox{\hyperlink{class_circle_a545ea69c6b0a4055fe311a98c54fcc2e}{write}} (std\+::ostream \&)
+\item 
+double \mbox{\hyperlink{class_circle_a87346813a0d19001e267e45402fe5a28}{get\+\_\+cx}} () const
+\item 
+double \mbox{\hyperlink{class_circle_a3e51fa5ebfdca420d10937bfd8a09004}{get\+\_\+cy}} () const
+\item 
+double \mbox{\hyperlink{class_circle_ad907092e763bdc050f0ad85cad8df980}{get\+\_\+r}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circle_a341190a79d6f1e12b5d774e914fe8702}\label{class_circle_a341190a79d6f1e12b5d774e914fe8702}} 
+double {\bfseries cx}
+\item 
+\mbox{\Hypertarget{class_circle_a466e9ebf4a561a476f17687c3a2d10d0}\label{class_circle_a466e9ebf4a561a476f17687c3a2d10d0}} 
+double {\bfseries cy}
+\item 
+\mbox{\Hypertarget{class_circle_a1e492090654899b1b52902b875a431b6}\label{class_circle_a1e492090654899b1b52902b875a431b6}} 
+double {\bfseries r}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & The cx property describes the horizontal center coordinate of the position of the circle. \\
+\hline
+{\em cy} & The cy property describes the vertical center coordinate of the position of the circle. \\
+\hline
+{\em r} & The r property describes the radius of the circle. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_circle_a87346813a0d19001e267e45402fe5a28}\label{class_circle_a87346813a0d19001e267e45402fe5a28}} 
+\index{Circle@{Circle}!get\_cx@{get\_cx}}
+\index{get\_cx@{get\_cx}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{get\_cx()}{get\_cx()}}
+{\footnotesize\ttfamily double Circle\+::get\+\_\+cx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the \textquotesingle{}cx\textquotesingle{} value. \mbox{\Hypertarget{class_circle_a3e51fa5ebfdca420d10937bfd8a09004}\label{class_circle_a3e51fa5ebfdca420d10937bfd8a09004}} 
+\index{Circle@{Circle}!get\_cy@{get\_cy}}
+\index{get\_cy@{get\_cy}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{get\_cy()}{get\_cy()}}
+{\footnotesize\ttfamily double Circle\+::get\+\_\+cy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the \textquotesingle{}cy\textquotesingle{} value. \mbox{\Hypertarget{class_circle_ad907092e763bdc050f0ad85cad8df980}\label{class_circle_ad907092e763bdc050f0ad85cad8df980}} 
+\index{Circle@{Circle}!get\_r@{get\_r}}
+\index{get\_r@{get\_r}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{get\_r()}{get\_r()}}
+{\footnotesize\ttfamily double Circle\+::get\+\_\+r (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the \textquotesingle{}r\textquotesingle{} value. \mbox{\Hypertarget{class_circle_a8e1b2afd696611b697691ed8ae897000}\label{class_circle_a8e1b2afd696611b697691ed8ae897000}} 
+\index{Circle@{Circle}!print@{print}}
+\index{print@{print}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Circle\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints in the terminal the shape parameters. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a77c4d50b89023412c735c2f19182e475}\label{class_circle_a77c4d50b89023412c735c2f19182e475}} 
+\index{Circle@{Circle}!translate@{translate}}
+\index{translate@{translate}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Circle\+::translate (\begin{DoxyParamCaption}\item[{double}]{horizontal\+\_\+translation = {\ttfamily 0},  }\item[{double}]{vertical\+\_\+translation = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Offsets the shape in a certain direction. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a0f9cca26b853535b1d8ca66dd5363bc8}\label{class_circle_a0f9cca26b853535b1d8ca66dd5363bc8}} 
+\index{Circle@{Circle}!within@{within}}
+\index{within@{within}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Circle\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_circle}{Circle}} \&}]{circle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Check whether a shape is inside the range of a circle. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_aa2a08bf96b70e6e5040acdc4ddbb77f0}\label{class_circle_aa2a08bf96b70e6e5040acdc4ddbb77f0}} 
+\index{Circle@{Circle}!within@{within}}
+\index{within@{within}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Circle\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{rectangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Check whether a shape is inside the range of a rectangle. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_circle_a545ea69c6b0a4055fe311a98c54fcc2e}\label{class_circle_a545ea69c6b0a4055fe311a98c54fcc2e}} 
+\index{Circle@{Circle}!write@{write}}
+\index{write@{write}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Circle\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Output information of the shape to a stream. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+

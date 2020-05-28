@@ -10,12 +10,6 @@
  * The cy property describes the vertical center coordinate of the position of the circle.
  * @param r
  * The r property describes the radius of the circle.
- * @fn double get_cx()
- * Return the value of the "cx" parameter.
- * @fn double get_cy()
- * Return the value of the "cy" parameter.
- * @fn double get_r()
- * Return the value of the "r" parameter.
  */
 
 class Circle : public Shape {

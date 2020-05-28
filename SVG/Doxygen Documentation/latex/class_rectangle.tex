@@ -1,0 +1,154 @@
+\hypertarget{class_rectangle}{}\doxysection{Rectangle Class Reference}
+\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+{\ttfamily \#include $<$Rectangle.\+h$>$}
+
+Inheritance diagram for Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rectangle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rectangle_a74c7f1a3c6b8865aac6b6fecf566c49c}\label{class_rectangle_a74c7f1a3c6b8865aac6b6fecf566c49c}} 
+{\bfseries Rectangle} (double \+\_\+x, double \+\_\+y, double \+\_\+width, double \+\_\+height, Color \+\_\+color, double \+\_\+rx=0, double \+\_\+ry=0, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
+\item 
+void \mbox{\hyperlink{class_rectangle_abe632920fce778141264fcd896052d11}{print}} ()
+\item 
+void \mbox{\hyperlink{class_rectangle_a84bb25950798e189a8d2a1f28a60a270}{translate}} (double, double)
+\item 
+bool \mbox{\hyperlink{class_rectangle_a34803112d958ea9351063694a5e8eeda}{within}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&)
+\item 
+bool \mbox{\hyperlink{class_rectangle_a93d786a080c4fc1e3c35f88369c9cce8}{within}} (const \mbox{\hyperlink{class_circle}{Circle}} \&)
+\item 
+void \mbox{\hyperlink{class_rectangle_a4ccfdbd63d953c9f626f50aa60bd5a77}{write}} (std\+::ostream \&)
+\item 
+double \mbox{\hyperlink{class_rectangle_a092d75ab7ac22bcf5bae31cb8a85592f}{get\+\_\+x}} () const
+\item 
+double \mbox{\hyperlink{class_rectangle_a858fa8a8788acd64f5505e66929245e3}{get\+\_\+y}} () const
+\item 
+double \mbox{\hyperlink{class_rectangle_a72441d3abbc00c9993716b17663f993c}{get\+\_\+width}} () const
+\item 
+double \mbox{\hyperlink{class_rectangle_a5e49b60d320f7951b91c54fe8a97d9cc}{get\+\_\+height}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rectangle_ae6b5fc45ad8cbbc0e2330f2447a1ea49}\label{class_rectangle_ae6b5fc45ad8cbbc0e2330f2447a1ea49}} 
+double {\bfseries x}
+\item 
+\mbox{\Hypertarget{class_rectangle_a002db002308cd5df67dcb0f3b382416f}\label{class_rectangle_a002db002308cd5df67dcb0f3b382416f}} 
+double {\bfseries y}
+\item 
+\mbox{\Hypertarget{class_rectangle_a8c0b054046e0740469e60ce34c9c6d96}\label{class_rectangle_a8c0b054046e0740469e60ce34c9c6d96}} 
+double {\bfseries rx}
+\item 
+\mbox{\Hypertarget{class_rectangle_abce7492daa201a2ef00c446fd83d2fd1}\label{class_rectangle_abce7492daa201a2ef00c446fd83d2fd1}} 
+double {\bfseries ry}
+\item 
+\mbox{\Hypertarget{class_rectangle_ac2c47512ca05c56cec73c32bb693d479}\label{class_rectangle_ac2c47512ca05c56cec73c32bb693d479}} 
+double {\bfseries width}
+\item 
+\mbox{\Hypertarget{class_rectangle_a58c0573f0d706d238759395e8272c6bf}\label{class_rectangle_a58c0573f0d706d238759395e8272c6bf}} 
+double {\bfseries height}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x property describes the horizontal coordinate of the position of the element. \\
+\hline
+{\em y} & The y property describes the vertical coordinate of the position of the element. \\
+\hline
+{\em width} & This property specifies the width of the rectangle. Negative values for \textquotesingle{}width\textquotesingle{} are illegal. \\
+\hline
+{\em height} & This property specifies the height of the rectangle. Negative values for \textquotesingle{}height\textquotesingle{} are illegal. \\
+\hline
+{\em rx} & The rx property describes the horizontal curve radius of the rectangle. A negative value for rx is illegal. \\
+\hline
+{\em ry} & The ry property describes the vertical curve radius of the rectangle. A negative value for ry is illegal. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rectangle_a5e49b60d320f7951b91c54fe8a97d9cc}\label{class_rectangle_a5e49b60d320f7951b91c54fe8a97d9cc}} 
+\index{Rectangle@{Rectangle}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily double Rectangle\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the value of the \char`\"{}height\char`\"{} parameter. \mbox{\Hypertarget{class_rectangle_a72441d3abbc00c9993716b17663f993c}\label{class_rectangle_a72441d3abbc00c9993716b17663f993c}} 
+\index{Rectangle@{Rectangle}!get\_width@{get\_width}}
+\index{get\_width@{get\_width}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{get\_width()}{get\_width()}}
+{\footnotesize\ttfamily double Rectangle\+::get\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the value of the \char`\"{}width\char`\"{} parameter. \mbox{\Hypertarget{class_rectangle_a092d75ab7ac22bcf5bae31cb8a85592f}\label{class_rectangle_a092d75ab7ac22bcf5bae31cb8a85592f}} 
+\index{Rectangle@{Rectangle}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily double Rectangle\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the value of the \char`\"{}x\char`\"{} parameter. \mbox{\Hypertarget{class_rectangle_a858fa8a8788acd64f5505e66929245e3}\label{class_rectangle_a858fa8a8788acd64f5505e66929245e3}} 
+\index{Rectangle@{Rectangle}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily double Rectangle\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the value of the \char`\"{}y\char`\"{} parameter. \mbox{\Hypertarget{class_rectangle_abe632920fce778141264fcd896052d11}\label{class_rectangle_abe632920fce778141264fcd896052d11}} 
+\index{Rectangle@{Rectangle}!print@{print}}
+\index{print@{print}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Rectangle\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints in the terminal the shape parameters. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a84bb25950798e189a8d2a1f28a60a270}\label{class_rectangle_a84bb25950798e189a8d2a1f28a60a270}} 
+\index{Rectangle@{Rectangle}!translate@{translate}}
+\index{translate@{translate}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Rectangle\+::translate (\begin{DoxyParamCaption}\item[{double}]{horizontal\+\_\+translation = {\ttfamily 0},  }\item[{double}]{vertical\+\_\+translation = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Offsets the shape in a certain direction. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a93d786a080c4fc1e3c35f88369c9cce8}\label{class_rectangle_a93d786a080c4fc1e3c35f88369c9cce8}} 
+\index{Rectangle@{Rectangle}!within@{within}}
+\index{within@{within}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Rectangle\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_circle}{Circle}} \&}]{circle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Check whether a shape is inside the range of a circle. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a34803112d958ea9351063694a5e8eeda}\label{class_rectangle_a34803112d958ea9351063694a5e8eeda}} 
+\index{Rectangle@{Rectangle}!within@{within}}
+\index{within@{within}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Rectangle\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{rectangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Check whether a shape is inside the range of a rectangle. 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+
+\mbox{\Hypertarget{class_rectangle_a4ccfdbd63d953c9f626f50aa60bd5a77}\label{class_rectangle_a4ccfdbd63d953c9f626f50aa60bd5a77}} 
+\index{Rectangle@{Rectangle}!write@{write}}
+\index{write@{write}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Rectangle\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Output information of the shape to a stream. ~\newline
+ 
+
+Implements \mbox{\hyperlink{class_shape}{Shape}}.
+

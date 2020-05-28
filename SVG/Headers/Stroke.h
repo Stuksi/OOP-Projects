@@ -22,10 +22,10 @@ enum Color {
  * @param stroke_color
  * Defines the color of the stroke.
  * @param stroke_width
- * Define the width of the stroke.
- * @fn Color get_color()
+ * Defines the width of the stroke.
+ * @fn Color Stroke::get_color()
  * Accessing the "stroke_color" parameter.
- * @fn Color get_width()
+ * @fn Color Stroke::get_width()
  * Accessing the "stroke_width" parameter.
  */
 

@@ -1,0 +1,51 @@
+\hypertarget{class_factory}{}\doxysection{Factory Class Reference}
+\label{class_factory}\index{Factory@{Factory}}
+
+
+{\ttfamily \#include $<$Factory.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Color \mbox{\hyperlink{class_factory_a8f8aecaa45aaa318beaf229415e4e508}{find\+\_\+color}} (std\+::string)
+\item 
+static std\+::string \mbox{\hyperlink{class_factory_a698f4ee4d063b90d804e411cb6c7da57}{color\+\_\+to\+\_\+string}} (Color)
+\item 
+static \mbox{\hyperlink{class_shape}{Shape}} $\ast$ \mbox{\hyperlink{class_factory_a82570ad19e6b91d03a3224756059268a}{get\+\_\+shape}} (std\+::vector$<$ std\+::string $>$ shape\+\_\+info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_factory_a2f40e4144ae335734019b55348b7e9d6}{to\+\_\+lower\+\_\+case}} (std\+::string \&type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class helper, to recognise the class type. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_factory_a698f4ee4d063b90d804e411cb6c7da57}\label{class_factory_a698f4ee4d063b90d804e411cb6c7da57}} 
+\index{Factory@{Factory}!color\_to\_string@{color\_to\_string}}
+\index{color\_to\_string@{color\_to\_string}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{color\_to\_string()}{color\_to\_string()}}
+{\footnotesize\ttfamily std\+::string Factory\+::color\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Color to string. \mbox{\Hypertarget{class_factory_a8f8aecaa45aaa318beaf229415e4e508}\label{class_factory_a8f8aecaa45aaa318beaf229415e4e508}} 
+\index{Factory@{Factory}!find\_color@{find\_color}}
+\index{find\_color@{find\_color}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{find\_color()}{find\_color()}}
+{\footnotesize\ttfamily Color Factory\+::find\+\_\+color (\begin{DoxyParamCaption}\item[{std\+::string}]{color\+\_\+init }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Color recognision from string. \mbox{\Hypertarget{class_factory_a82570ad19e6b91d03a3224756059268a}\label{class_factory_a82570ad19e6b91d03a3224756059268a}} 
+\index{Factory@{Factory}!get\_shape@{get\_shape}}
+\index{get\_shape@{get\_shape}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{get\_shape()}{get\_shape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_shape}{Shape}} $\ast$ Factory\+::get\+\_\+shape (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{shape\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+By given information, returns an object(shape). \mbox{\Hypertarget{class_factory_a2f40e4144ae335734019b55348b7e9d6}\label{class_factory_a2f40e4144ae335734019b55348b7e9d6}} 
+\index{Factory@{Factory}!to\_lower\_case@{to\_lower\_case}}
+\index{to\_lower\_case@{to\_lower\_case}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{to\_lower\_case()}{to\_lower\_case()}}
+{\footnotesize\ttfamily void Factory\+::to\+\_\+lower\+\_\+case (\begin{DoxyParamCaption}\item[{std\+::string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Changes the string to lower case. 

@@ -4,25 +4,6 @@
 #include "Shape.h"
 #include <fstream>
 
-/**
- * @fn bool exists()
- * By a given string(file name), find if the file exists in the current directory.
- * @fn bool empty_file()
- * Checks whether the file is empty.
- * @fn void open()
- * Opens a file, and reads its information to the system, ready to be modified.
- * @fn void close()
- * Closes the opened file and removes the information of it from the system.
- * @fn void save()
- * Saves the current information in the system to the same file it was read from.
- * @fn void saveas()
- * Saves the current information in the system to a specific file.
- * @fn void help()
- * Outputs a helper menu, to show the available user commands.
- * @fn void parameters()
- * Show information about all the supported shapes.
- */
-
 class CMD {
 private:
     static bool exists (std::string file_name);

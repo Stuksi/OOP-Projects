@@ -20,14 +20,6 @@
  * @param ry
  * The ry property describes the vertical curve radius of the rectangle.
  * A negative value for ry is illegal.
- * @fn double get_x()
- * Return the value of the "x" parameter.
- * @fn double get_y()
- * Return the value of the "y" parameter.
- * @fn double get_width()
- * Return the value of the "width" parameter.
- * @fn double get_height()
- * Return the value of the "height" parameter.
  */
 
 class Rectangle : public Shape {

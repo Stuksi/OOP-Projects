@@ -2,6 +2,27 @@
 #include "..\Headers\Circle.h"
 #include "..\Headers\Factory.h"
 
+/**
+ * @fn void Rectangle::print()
+ * Prints in the terminal the shape parameters.
+ * @fn void Rectangle::translate()
+ * Offsets the shape in a certain direction.
+ * @fn bool Rectangle::within(const Rectangle& rectangle)
+ * Check whether a shape is inside the range of a rectangle.
+ * @fn bool Rectangle::within(const Circle& circle)
+ * Check whether a shape is inside the range of a circle.
+ * @fn void Rectangle::write()
+ * Output information of the shape to a stream.  
+ * @fn double Rectangle::get_x()
+ * Return the value of the "x" parameter.
+ * @fn double Rectangle::get_y()
+ * Return the value of the "y" parameter.
+ * @fn double Rectangle::get_width()
+ * Return the value of the "width" parameter.
+ * @fn double Rectangle::get_height()
+ * Return the value of the "height" parameter.
+ */
+
 void Rectangle::print() {
     std::cout << "Rectangle: x = \""
               << x << "\", y = \""

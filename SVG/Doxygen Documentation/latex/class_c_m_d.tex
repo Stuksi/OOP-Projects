@@ -1,0 +1,91 @@
+\hypertarget{class_c_m_d}{}\doxysection{C\+MD Class Reference}
+\label{class_c_m_d}\index{CMD@{CMD}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a6cee13cc2443912911f64f2f57f62ddb}{open}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage, std\+::ifstream \&r\+\_\+file, std\+::string \&file\+\_\+name)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a1a5890abe760d9cc6cbe2ea1243bafaa}{close}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::ifstream \&r\+\_\+file, std\+::string \&file\+\_\+name)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a492601c3a9178dcae416ddd78de1aacb}{save}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::ifstream \&r\+\_\+file, std\+::string \&file\+\_\+name)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a4b6206f0262f8933813b8a85f1616de1}{saveas}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage, std\+::ifstream \&r\+\_\+file)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a44804a50a1c82517afafbb8022e04759}{help}} ()
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a3d336cf295682cf1a211f4c53ef42c10}{parameters}} ()
+\item 
+\mbox{\Hypertarget{class_c_m_d_aa70db66399018d22da682f134fdda2ea}\label{class_c_m_d_aa70db66399018d22da682f134fdda2ea}} 
+static void {\bfseries print} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes)
+\item 
+\mbox{\Hypertarget{class_c_m_d_a0570f00114ee09694899b91581492af2}\label{class_c_m_d_a0570f00114ee09694899b91581492af2}} 
+static void {\bfseries create} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+\item 
+\mbox{\Hypertarget{class_c_m_d_a532b25f8b0a9f4d8cc119b415720dabb}\label{class_c_m_d_a532b25f8b0a9f4d8cc119b415720dabb}} 
+static void {\bfseries erase} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+\item 
+\mbox{\Hypertarget{class_c_m_d_abf600ad717d61179d27e12a3fbb1a84a}\label{class_c_m_d_abf600ad717d61179d27e12a3fbb1a84a}} 
+static void {\bfseries translate} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+\item 
+\mbox{\Hypertarget{class_c_m_d_a083d5cb68d176cef892fbbf94ede7e1e}\label{class_c_m_d_a083d5cb68d176cef892fbbf94ede7e1e}} 
+static void {\bfseries within} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_c_m_d_a7e7ed50f3fb7bbe3c4d2dc389178fb39}{exists}} (std\+::string file\+\_\+name)
+\item 
+static bool \mbox{\hyperlink{class_c_m_d_add39b9723060cc293ab6134358e657a7}{empty\+\_\+file}} (std\+::string file\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_m_d_a1a5890abe760d9cc6cbe2ea1243bafaa}\label{class_c_m_d_a1a5890abe760d9cc6cbe2ea1243bafaa}} 
+\index{CMD@{CMD}!close@{close}}
+\index{close@{close}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void C\+M\+D\+::close (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::ifstream \&}]{r\+\_\+file,  }\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Closes the opened file and removes the information of it from the system. \mbox{\Hypertarget{class_c_m_d_add39b9723060cc293ab6134358e657a7}\label{class_c_m_d_add39b9723060cc293ab6134358e657a7}} 
+\index{CMD@{CMD}!empty\_file@{empty\_file}}
+\index{empty\_file@{empty\_file}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{empty\_file()}{empty\_file()}}
+{\footnotesize\ttfamily bool C\+M\+D\+::empty\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Checks whether the file is empty. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_a7e7ed50f3fb7bbe3c4d2dc389178fb39}\label{class_c_m_d_a7e7ed50f3fb7bbe3c4d2dc389178fb39}} 
+\index{CMD@{CMD}!exists@{exists}}
+\index{exists@{exists}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool C\+M\+D\+::exists (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+By a given string(file name), find if the file exists in the current directory. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_a44804a50a1c82517afafbb8022e04759}\label{class_c_m_d_a44804a50a1c82517afafbb8022e04759}} 
+\index{CMD@{CMD}!help@{help}}
+\index{help@{help}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void C\+M\+D\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Outputs a helper menu, to show the available user commands. \mbox{\Hypertarget{class_c_m_d_a6cee13cc2443912911f64f2f57f62ddb}\label{class_c_m_d_a6cee13cc2443912911f64f2f57f62ddb}} 
+\index{CMD@{CMD}!open@{open}}
+\index{open@{open}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void C\+M\+D\+::open (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::vector$<$ std\+::string $>$}]{info\+\_\+storage,  }\item[{std\+::ifstream \&}]{r\+\_\+file,  }\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Opens a file, and reads its information to the system, ready to be modified. \mbox{\Hypertarget{class_c_m_d_a3d336cf295682cf1a211f4c53ef42c10}\label{class_c_m_d_a3d336cf295682cf1a211f4c53ef42c10}} 
+\index{CMD@{CMD}!parameters@{parameters}}
+\index{parameters@{parameters}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
+{\footnotesize\ttfamily void C\+M\+D\+::parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Show information about all the supported shapes. \mbox{\Hypertarget{class_c_m_d_a492601c3a9178dcae416ddd78de1aacb}\label{class_c_m_d_a492601c3a9178dcae416ddd78de1aacb}} 
+\index{CMD@{CMD}!save@{save}}
+\index{save@{save}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void C\+M\+D\+::save (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::ifstream \&}]{r\+\_\+file,  }\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Saves the current information in the system to the same file it was read from. \mbox{\Hypertarget{class_c_m_d_a4b6206f0262f8933813b8a85f1616de1}\label{class_c_m_d_a4b6206f0262f8933813b8a85f1616de1}} 
+\index{CMD@{CMD}!saveas@{saveas}}
+\index{saveas@{saveas}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{saveas()}{saveas()}}
+{\footnotesize\ttfamily void C\+M\+D\+::saveas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::vector$<$ std\+::string $>$}]{info\+\_\+storage,  }\item[{std\+::ifstream \&}]{r\+\_\+file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Saves the current information in the system to a specific file. 

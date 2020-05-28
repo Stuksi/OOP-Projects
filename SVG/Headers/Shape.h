@@ -13,20 +13,6 @@
  * Represents the color/filling of the shape.
  * @param stroke
  * Represents the stroke object over the shape.
- * @fn void print()
- * Prints in the terminal the shape parameters.
- * @fn void translate()
- * Offsets the shape in a certain direction.
- * @fn bool within(const Rectangle& rectangle)
- * Check whether a shape is inside the range of a rectangle.
- * @fn bool within(const Circle& circle)
- * Check whether a shape is inside the range of a circle.
- * @fn void write()
- * Output information of the shape to a stream. 
- * @fn std::ostream& operator<< ()
- * Used to write information of shapes to a stream.
- * @fn std::istream& operator>> ()
- * Used to read from a stream to an array of shapes.
  */
 
 class Rectangle;
