@@ -1,9 +1,5 @@
-#include "Assets\Headers\Figure.h"
-#include "Assets\Headers\CommandHandle.h"
+#include "Headers\Command_Prompt.h"
 
-#include <fstream>
-
-// Функция с която прескачаме празните места при търсене в низ.
 void skipEmptySpaces(std::string& string, size_t &k) {
     while (string[k] == ' ')
     {
@@ -15,69 +11,68 @@ void skipEmptySpaces(std::string& string, size_t &k) {
 }
 
 int main() {
-
-    std::ifstream r_File;
-    std::string commandLine, action = "", fileName, temp = "";
-    std::vector<std::string> infoStorage;
-    std::vector<Figure *> figures;
+    std::ifstream r_file;
+    
+    std::string command_line, action = "", file_name, temp = "";
     size_t k = 0;
+    
+    std::vector<std::string> info_storage;
+    std::vector<Shape *> shapes;
 
-    // Старт на програмата.
     do
     {
         action = "";
         temp = "";
-        infoStorage.clear();
+        info_storage.clear();
         k = 0;
 
-        // Приемане на информация от конзолата и превръщането и в команда.
-        std::getline(std::cin, commandLine);
+        std::getline(std::cin, command_line);
 
-        skipEmptySpaces(commandLine, k);
-        while (commandLine[k] != ' ' && commandLine[k] != '\0')
+        skipEmptySpaces(command_line, k);
+        while (command_line[k] != ' ' && command_line[k] != '\0')
         {
-            action += commandLine[k];
+            action += command_line[k];
             k++;
         }
-        skipEmptySpaces(commandLine, k);
-        while (commandLine[k] != ' ' && commandLine[k] != '\0')
+        skipEmptySpaces(command_line, k);
+        while (command_line[k] != ' ' && command_line[k] != '\0')
         {
-            if(commandLine[k] != ' ' && commandLine[k] != '\0') {
-                temp += commandLine[k];
+            if(command_line[k] != ' ' && command_line[k] != '\0') {
+                temp += command_line[k];
                 k++;
             }
-            if(commandLine[k] == ' ' || commandLine[k] == '\0') {
-                infoStorage.push_back(temp);
+            if(command_line[k] == ' ' || command_line[k] == '\0') {
+                info_storage.push_back(temp);
                 temp = "";
-                skipEmptySpaces(commandLine, k);
+                skipEmptySpaces(command_line, k);
             }
         }
         
         if(action == "open") {
-            CommandHandle::open(figures, infoStorage, r_File, fileName);
+            CMD::open(shapes, info_storage, r_file, file_name);
         } else if(action == "close") {
-            CommandHandle::close(figures, r_File, fileName);
+            CMD::close(shapes, r_file, file_name);
         } else if(action == "save") {
-            CommandHandle::save(figures, r_File, fileName);
+            CMD::save(shapes, r_file, file_name);
         } else if(action == "saveas") {
-            CommandHandle::saveas(figures, infoStorage, r_File);
+            CMD::saveas(shapes, info_storage, r_file);
         } else if (action == "help") {
-           CommandHandle::help();
+           CMD::help();
         } else if (action == "/parameters") {
-            CommandHandle::parameters();
+            CMD::parameters();
         } else {
             if(action != "exit") {
-                if(r_File.is_open()) {
+                if(r_file.is_open()) {
                     if(action == "print") {
-                        CommandHandle::print(figures);
+                        CMD::print(shapes);
                     }else if(action == "create") {
-                        CommandHandle::create(figures, infoStorage);
+                        CMD::create(shapes, info_storage);
                     }else if(action == "erase") {
-                        CommandHandle::erase(figures, infoStorage);
+                        CMD::erase(shapes, info_storage);
                     }else if(action == "translate") {
-                        CommandHandle::translate(figures, infoStorage);
+                        CMD::translate(shapes, info_storage);
                     }else if(action == "within") {
-                        CommandHandle::within(figures, infoStorage); 
+                        CMD::within(shapes, info_storage); 
                     } else {
                         std::cout << "Invalid command entered! Check help for more info!" << std::endl;
                     }
@@ -87,8 +82,10 @@ int main() {
             }
         }
     } while (action != "exit");
-    // Край на програмата.
     std::cout << "Exiting program..." << std::endl;
+
+
+
 
     return 0;
 }
