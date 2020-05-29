@@ -9,7 +9,7 @@ private:
     static bool exists (std::string file_name);
     static bool empty_file (std::string file_name);
 public:
-    static void open (std::vector<Shape *>& shapes, std::vector<std::string> info_storage, std::ifstream& r_file, std::string& file_name);
+    static void open (std::vector<Shape *>& shapes, std::ifstream& r_file, std::string& file_name);
     static void close (std::vector<Shape *>& shapes, std::ifstream& r_file, std::string& file_name);
     static void save (std::vector<Shape *>& shapes, std::ifstream& r_file, std::string& file_name);
     static void saveas (std::vector<Shape *>& shapes, std::vector<std::string> info_storage, std::ifstream& r_file);

@@ -2,6 +2,7 @@
 #include "..\Headers\Rectangle.h"
 #include "..\Headers\Circle.h"
 #include "..\Headers\Line.h"
+#include "..\Headers\Polygon.h"
 
 /**
  * @fn Color Factory::find_color()
@@ -48,6 +49,8 @@ Color Factory::find_color(std::string color_init) {
         color = Purple;
     } else if(color_init == "cyan") {
         color = Cyan;
+    } else if(color_init == "lime") {
+        color = Lime;
     }
     return color;
 }
@@ -88,6 +91,9 @@ std::string Factory::color_to_string(Color color) {
     case 10:
         return "Brown";
         break;
+    case 11:
+        return "Lime";
+        break;
     }
     return "";
 }
@@ -118,6 +124,38 @@ Shape* Factory::get_shape (std::vector<std::string> shape_info) {
             new_shape = new Line(stod(shape_info[1]), stod(shape_info[2]), stod(shape_info[3]), stod(shape_info[4]));
         } else if(shape_info.size() == 7){
             new_shape = new Line(stod(shape_info[1]), stod(shape_info[2]), stod(shape_info[3]), stod(shape_info[4]), find_color(shape_info[5]), stod(shape_info[6]));
+        }
+    } else if(shape_info[0] == "polygon") {
+        std::string result = "";
+        std::vector<double> x_values, y_values;
+        size_t i = 1;
+
+        while (i < shape_info.size())
+        {
+            if(shape_info[i][0] < '0' || shape_info[i][0] > '9') {
+                break;
+            }
+            for (size_t j = 0; j < shape_info[i].length(); j++)
+            {  
+                if(shape_info[i][j] != ',') {
+                    result+=shape_info[i][j];
+                } else {
+                    x_values.push_back(stod(result));
+                    result = "";
+                }
+                if(shape_info[i][j+1] == '\0' && result != "") {
+                    y_values.push_back(stod(result));
+                    result = "";
+                }
+            }   
+            i++;     
+        }
+        if(shape_info.size() == i) {
+            new_shape = new Polygon(x_values, y_values, Transperant);
+        } else if(shape_info.size() == i + 1) {
+            new_shape = new Polygon(x_values, y_values, find_color(shape_info[i]));
+        } else if(shape_info.size() == i + 3) {
+            new_shape = new Polygon(x_values, y_values, find_color(shape_info[i]), find_color(shape_info[i+1]), stod(shape_info[i+2]));
         }
     }
     return new_shape;

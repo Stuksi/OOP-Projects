@@ -13,7 +13,8 @@ enum Color {
     Pink,
     Purple,
     Cyan,
-    Brown
+    Brown,
+    Lime
 };
 
 /**

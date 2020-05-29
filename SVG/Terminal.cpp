@@ -35,21 +35,29 @@ int main() {
             k++;
         }
         skipEmptySpaces(command_line, k);
-        while (command_line[k] != ' ' && command_line[k] != '\0')
-        {
-            if(command_line[k] != ' ' && command_line[k] != '\0') {
-                temp += command_line[k];
-                k++;
+        if(action != "open") {
+            while (command_line[k] != ' ' && command_line[k] != '\0')
+            {
+                if(command_line[k] != ' ' && command_line[k] != '\0') {
+                    temp += command_line[k];
+                    k++;
+                }
+                if(command_line[k] == ' ' || command_line[k] == '\0') {
+                    info_storage.push_back(temp);
+                    temp = "";
+                    skipEmptySpaces(command_line, k);
+                }
             }
-            if(command_line[k] == ' ' || command_line[k] == '\0') {
-                info_storage.push_back(temp);
-                temp = "";
-                skipEmptySpaces(command_line, k);
+        } else {
+            while (command_line[k] != '\0')
+            {
+                file_name += command_line[k];
+                k++;
             }
         }
         
         if(action == "open") {
-            CMD::open(shapes, info_storage, r_file, file_name);
+            CMD::open(shapes, r_file, file_name);
         } else if(action == "close") {
             CMD::close(shapes, r_file, file_name);
         } else if(action == "save") {

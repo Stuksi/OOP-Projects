@@ -1,7 +1,7 @@
 #include "..\Headers\Command_Prompt.h"
-#include "..\Headers\Factory.h"
 #include "..\Headers\Rectangle.h"
 #include "..\Headers\Circle.h"
+#include "..\Headers\Factory.h"
 
 #include <fstream>
 
@@ -27,6 +27,10 @@
  */
 
 
+// Defining static members of factory.
+std::string Factory::top_file;
+std::string Factory::bottom_file;
+
 // Stack Overflow
 bool CMD::exists(std::string file_name) {
     std::fstream file(file_name);
@@ -39,16 +43,18 @@ bool CMD::empty_file(std::string file_name) {
     return file.peek() == std::ifstream::traits_type::eof();
 }
 
-void CMD::open (std::vector<Shape *>& shapes, std::vector<std::string> info_storage, std::ifstream& r_file, std::string& file_name) {
-    if(exists(info_storage[0])) {
-        file_name = info_storage[0];
+void CMD::open (std::vector<Shape *>& shapes, std::ifstream& r_file, std::string& file_name) {
+    if(!r_file.is_open() && exists(file_name)) {
+        Factory::bottom_file = "";
+        Factory::top_file = "";
         r_file.open(file_name);
         if(!empty_file(file_name)){
             r_file >> shapes;
         }
         std::cout << file_name << " opened successfully!" << std::endl;
     } else {
-        std::cout << info_storage[0] << " does not exist!" << std::endl;
+        std::cout << file_name << " does not exist or is already opened!" << std::endl;
+        file_name = "";
     }
 }
 
@@ -136,6 +142,8 @@ void CMD::create (std::vector<Shape *>& shapes, std::vector<std::string> info_st
         shapes.push_back(newShape);
         std::cout << "Successfully created: ";
         newShape->print();
+    } else {
+        std::cout << "Error while creating shape!" << std::endl;
     }
 }
 
