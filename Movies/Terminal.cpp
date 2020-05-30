@@ -1,4 +1,4 @@
-#include "Assets\Headers\CommHndl.h"
+#include "Headers\Command_Prompt.h"
 
 void skipEmptySpaces(std::string& string, size_t &k) {
     while (string[k] == ' ')
@@ -11,70 +11,88 @@ void skipEmptySpaces(std::string& string, size_t &k) {
 }
 
 int main () {
-
-    std::string commandLine, action = "", fileName, temp = "";
-    std::ifstream r_File;
-    std::vector<std::string> infoStorage;
-    std::vector<Movie> movies;
-    std::vector<int> codes;
+    std::ifstream r_file;
+    
+    std::string command_line, action = "", file_name, temp = "";
     size_t k = 0;
+    
+    std::vector<std::string> info_storage;
+    std::vector<int> codes;
+    std::vector<Event> events;
 
     do
     {
         action = "";
         temp = "";
-        infoStorage.clear();
+        info_storage.clear();
         k = 0;
 
-        std::getline(std::cin, commandLine);
+        std::getline(std::cin, command_line);
 
-        skipEmptySpaces(commandLine, k);
-        while (commandLine[k] != ' ' && commandLine[k] != '\0')
+        skipEmptySpaces(command_line, k);
+        while (command_line[k] != ' ' && command_line[k] != '\0')
         {
-            action += commandLine[k];
+            action += command_line[k];
             k++;
         }
-        skipEmptySpaces(commandLine, k);
-        while (commandLine[k] != ' ' && commandLine[k] != '\0')
-        {
-            if(commandLine[k] != ' ' && commandLine[k] != '\0') {
-                temp += commandLine[k];
-                k++;
+        skipEmptySpaces(command_line, k);
+        if(action != "open") {
+            while (command_line[k] != ' ' && command_line[k] != '\0')
+            {
+                if(command_line[k] == '"') {
+                    k++;
+                    while (command_line[k] != '"')
+                    {
+                        temp += command_line[k];
+                        k++;
+                    }
+                    k++;
+                }
+                if(command_line[k] != ' ' && command_line[k] != '\0') {
+                    temp += command_line[k];
+                    k++;
+                }
+                if(command_line[k] == ' ' || command_line[k] == '\0') {
+                    info_storage.push_back(temp);
+                    temp = "";
+                    skipEmptySpaces(command_line, k);
+                }
             }
-            if(commandLine[k] == ' ' || commandLine[k] == '\0') {
-                infoStorage.push_back(temp);
-                temp = "";
-                skipEmptySpaces(commandLine, k);
+        } else {
+            while (command_line[k] != '\0')
+            {
+                file_name += command_line[k];
+                k++;
             }
         }
 
         if(action == "open") {
-            CommHndl::open(r_File, infoStorage, movies, fileName);
+            CMD::open(r_file, events, file_name);
         } else if(action == "close") {
-            CommHndl::close(r_File, movies, fileName);
+            CMD::close(r_file, events, file_name);
         } else if(action == "save") {
-            CommHndl::save(r_File, movies, fileName);
+            CMD::save(r_file, events, file_name);
         } else if(action == "saveas") {
-            CommHndl::saveas(r_File, infoStorage, movies);
+            CMD::saveas(r_file, info_storage, events);
         } else if(action == "help") {
-            CommHndl::help();          
+            CMD::help();          
         } else {
             if(action == "addevent") {
-                CommHndl::addevent(infoStorage, movies);
+                CMD::add_event(info_storage, events);
             } else if(action == "freeseats") {
-                CommHndl::freeseats(infoStorage, movies);
+                CMD::free_seats(info_storage, events);
             } else if(action == "book") {
-                CommHndl::book(infoStorage, movies);
+                CMD::access_seats(info_storage, events, codes, 1);
             } else if(action == "unbook") {
-                CommHndl::unbook(infoStorage, movies);
+                CMD::access_seats(info_storage, events, codes, 0);
             } else if(action == "buy") {
-                CommHndl::buy(infoStorage, movies, codes);
+                CMD::access_seats(info_storage, events, codes, 2);
             } else if(action == "bookings") {
-                CommHndl::bookings(infoStorage, movies);
+                CMD::bookings(info_storage, events);
             } else if(action == "check") {
-                CommHndl::check(infoStorage, movies, codes);
+                CMD::check(info_storage, events, codes);
             } else if(action == "report") {
-                CommHndl::report(infoStorage, movies);
+                CMD::report(info_storage, events);
             } else {
 
             }   

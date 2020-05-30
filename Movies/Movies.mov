@@ -1,17 +1,19 @@
-Date: "15.06.2020"
-    Movie: "John_Wick_1" - Hall: "3"|
-    Movie: "Toy_Story" - Hall: "2"|
-    Movie: "Aquaman" - Hall: "1"|
-    Movie: "Star_Wars_Frontier" - Hall: "4"/
-Date: "14.06.2020"
-    Movie: "Avengers_Age_of_Neutron" - Hall: "3"|
-    Movie: "Avengers_EndGame" - Hall: "4"|
-    Movie: "Lord_of_the_Rings" - Hall: "2"|
-    Movie: "Assasins_Creed" - Hall: "1"|
-    Movie: "Ratatouille" - Hall: "5"/
-Date: "13.06.2020"
-    Movie: "Iron_Man_2" - Hall: "1"|
-    Movie: "The_Green_Book" - Hall: "3"|
-    Movie: "Thor_Ragnarok" - Hall: "2"|
-    Movie: "YU_GI_OH_GX" - Hall: "4"|
-    Movie: "War_Machines" - Hall: "5"/
+Date: "2020-06-15"
+    Movie: "Star Wars Frontier" - Hall: "4"
+    Movie: "John Wick 1" - Hall: "3"
+    Movie: "Toy Story" - Hall: "2"
+    Movie: "Aquaman" - Hall: "1"/
+Date: "2020-06-14"
+    Movie: "Ratatouille" - Hall: "5"
+    Movie: "Avengers Age of Neutron" - Hall: "3"
+    Movie: "Avengers EndGame" - Hall: "4"
+    Movie: "Lord of the Rings" - Hall: "2"
+    Movie: "Assasins Creed" - Hall: "1"/
+Date: "2020-06-13"
+    Movie: "War Machines" - Hall: "5"
+    Movie: "Iron Man 2" - Hall: "1"
+    Movie: "The Green Book" - Hall: "3"
+    Movie: "Thor Ragnarok" - Hall: "2"
+    Movie: "YU GI OH-GX" - Hall: "4"/
+Date: "2020-01-01"
+    Movie: "New Years Eve" - Hall: "1"/
