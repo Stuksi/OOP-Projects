@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['factory_34',['Factory',['../class_factory.html',1,'']]]
+  ['factory_58',['Factory',['../class_factory.html',1,'']]]
 ];

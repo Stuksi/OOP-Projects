@@ -4,28 +4,35 @@
 #include "Shape.h"
 
 /**
- * @param x1
- * The coordinate on the 'x' axis of the start of the line.
- * @param y1
- * The coordinate on the 'y' axis of the start of the line.
- * @param x2
- * The coordinate on the 'x' axis of the end of the line.
- * @param y2
- * The coordinate on the 'y' axis of the end of the line.
+ * Клас Line.
+ * Класът Line наследява класа Shape. Той съдържа допълнителни променливи,
+ * като координати на две точки, които при свързването им образуват Line.
  */
 
 class Line : public Shape {
 private:
-    double x1, y1, x2, y2;
+    double x1; /**< Координатата на "първата" точка по абцисата. */ 
+    double y1; /**< Координатата на "първата" точка по ординатата. */
+    double x2; /**< Координатата на "втората" точка по абцисата. */
+    double y2; /**< Координатата на "втората" точка по ординатата. */
 public:
+
+    /**
+     * Конструктор за класа Line. 
+     * Конструкторът приема допълнителни променливите необходими за съществуването на една линия в равнината, 
+     * като координати на две точки, които при свързването им образуват Line. Line може да има 
+     * подчертаваща линия, която е с цвят и широчина на щриха. Тези компоненти са наследени
+     * от класа Shape. 
+     */
     Line(double _x1, double _y1, double _x2, double _y2, Color _stroke_color = Transperant, double _stroke_width = 0)
     : x1(_x1), y1(_y1), x2(_x2), y2(_y2), Shape(Transperant, _stroke_color, _stroke_width) {}
 
-    void print();
-    void translate(double, double);
-    bool within(const Rectangle&);
-    bool within(const Circle&);
-    void write(std::ostream&);
+    void print(); /**< Метода се използва за извеждане на информация за обекта в конзолата. */
+    void translate(double, double); /**< Променя разположението на обекта в равнината по подадено изместване по ординатата и абцисата. 
+                                         Метода влияе само на координатите на точките.*/
+    bool within(const Rectangle&); /**< Проверява дали дадения обект се намира изцяло в друг обект Rectangle с дадени параметри. */
+    bool within(const Circle&); /**< Проверява дали дадения обект се намира изцяло в друг обект Circle с дадени параметри. */
+    void write(std::ostream&); /**< Метода се използва за записване на информацията на обекта във файл. */
 };
 
 #endif

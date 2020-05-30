@@ -7,45 +7,67 @@
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static Color \mbox{\hyperlink{class_factory_a8f8aecaa45aaa318beaf229415e4e508}{find\+\_\+color}} (std\+::string)
+static Color \mbox{\hyperlink{class_factory_aac4604bbce77171847979f81f67e209a}{find\+\_\+color}} (std\+::string)
 \item 
-static std\+::string \mbox{\hyperlink{class_factory_a698f4ee4d063b90d804e411cb6c7da57}{color\+\_\+to\+\_\+string}} (Color)
+static std\+::string \mbox{\hyperlink{class_factory_aa4b79a2be95f56450adaae07f8f2b078}{color\+\_\+to\+\_\+string}} (Color)
 \item 
-static \mbox{\hyperlink{class_shape}{Shape}} $\ast$ \mbox{\hyperlink{class_factory_a82570ad19e6b91d03a3224756059268a}{get\+\_\+shape}} (std\+::vector$<$ std\+::string $>$ shape\+\_\+info)
+static \mbox{\hyperlink{class_shape}{Shape}} $\ast$ \mbox{\hyperlink{class_factory_a2cc006fd8c227be4d7a86a80480f317f}{get\+\_\+shape}} (std\+::vector$<$ std\+::string $>$ shape\+\_\+info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_factory_a5d47d8e0a7e196a4428788e4803ad97e}{top\+\_\+file}}
+\item 
+static std\+::string \mbox{\hyperlink{class_factory_a5fe7892b6d85686d4b9fdb5ac92ca071}{bottom\+\_\+file}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{class_factory_a2f40e4144ae335734019b55348b7e9d6}{to\+\_\+lower\+\_\+case}} (std\+::string \&type)
+static void \mbox{\hyperlink{class_factory_a86b4d8551d61930c83339d993e0b5147}{to\+\_\+lower\+\_\+case}} (std\+::string \&type)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class helper, to recognise the class type. 
+Клас \mbox{\hyperlink{class_factory}{Factory}}. Класът \mbox{\hyperlink{class_factory}{Factory}} е помощен клас, който съдържа методи за определяне на вида на дадена фигура по подаден низ, както и опеделяне на цвят. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_factory_a698f4ee4d063b90d804e411cb6c7da57}\label{class_factory_a698f4ee4d063b90d804e411cb6c7da57}} 
+\mbox{\Hypertarget{class_factory_aa4b79a2be95f56450adaae07f8f2b078}\label{class_factory_aa4b79a2be95f56450adaae07f8f2b078}} 
 \index{Factory@{Factory}!color\_to\_string@{color\_to\_string}}
 \index{color\_to\_string@{color\_to\_string}!Factory@{Factory}}
 \doxysubsubsection{\texorpdfstring{color\_to\_string()}{color\_to\_string()}}
-{\footnotesize\ttfamily std\+::string Factory\+::color\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static std\+::string Factory\+::color\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{Color}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Color to string. \mbox{\Hypertarget{class_factory_a8f8aecaa45aaa318beaf229415e4e508}\label{class_factory_a8f8aecaa45aaa318beaf229415e4e508}} 
+Открива низа по цвят. \mbox{\Hypertarget{class_factory_aac4604bbce77171847979f81f67e209a}\label{class_factory_aac4604bbce77171847979f81f67e209a}} 
 \index{Factory@{Factory}!find\_color@{find\_color}}
 \index{find\_color@{find\_color}!Factory@{Factory}}
 \doxysubsubsection{\texorpdfstring{find\_color()}{find\_color()}}
-{\footnotesize\ttfamily Color Factory\+::find\+\_\+color (\begin{DoxyParamCaption}\item[{std\+::string}]{color\+\_\+init }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static Color Factory\+::find\+\_\+color (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Color recognision from string. \mbox{\Hypertarget{class_factory_a82570ad19e6b91d03a3224756059268a}\label{class_factory_a82570ad19e6b91d03a3224756059268a}} 
+Открива цвета по подаден низ. \mbox{\Hypertarget{class_factory_a2cc006fd8c227be4d7a86a80480f317f}\label{class_factory_a2cc006fd8c227be4d7a86a80480f317f}} 
 \index{Factory@{Factory}!get\_shape@{get\_shape}}
 \index{get\_shape@{get\_shape}!Factory@{Factory}}
 \doxysubsubsection{\texorpdfstring{get\_shape()}{get\_shape()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_shape}{Shape}} $\ast$ Factory\+::get\+\_\+shape (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{shape\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_shape}{Shape}}$\ast$ Factory\+::get\+\_\+shape (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{shape\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-By given information, returns an object(shape). \mbox{\Hypertarget{class_factory_a2f40e4144ae335734019b55348b7e9d6}\label{class_factory_a2f40e4144ae335734019b55348b7e9d6}} 
+Открива типа на фигурата и нейните атрибути по подаден вектор от низове. \mbox{\Hypertarget{class_factory_a86b4d8551d61930c83339d993e0b5147}\label{class_factory_a86b4d8551d61930c83339d993e0b5147}} 
 \index{Factory@{Factory}!to\_lower\_case@{to\_lower\_case}}
 \index{to\_lower\_case@{to\_lower\_case}!Factory@{Factory}}
 \doxysubsubsection{\texorpdfstring{to\_lower\_case()}{to\_lower\_case()}}
-{\footnotesize\ttfamily void Factory\+::to\+\_\+lower\+\_\+case (\begin{DoxyParamCaption}\item[{std\+::string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily static void Factory\+::to\+\_\+lower\+\_\+case (\begin{DoxyParamCaption}\item[{std\+::string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-Changes the string to lower case. 
+Помощен метод за променяне на низа да е изцяло с малки букви за по-\/лесна обработка от програмата. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_factory_a5fe7892b6d85686d4b9fdb5ac92ca071}\label{class_factory_a5fe7892b6d85686d4b9fdb5ac92ca071}} 
+\index{Factory@{Factory}!bottom\_file@{bottom\_file}}
+\index{bottom\_file@{bottom\_file}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{bottom\_file}{bottom\_file}}
+{\footnotesize\ttfamily std\+::string Factory\+::bottom\+\_\+file\hspace{0.3cm}{\ttfamily [static]}}
+
+Съдържа текста под инфорамацията с фигурите, на файла който е отворен. \mbox{\Hypertarget{class_factory_a5d47d8e0a7e196a4428788e4803ad97e}\label{class_factory_a5d47d8e0a7e196a4428788e4803ad97e}} 
+\index{Factory@{Factory}!top\_file@{top\_file}}
+\index{top\_file@{top\_file}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{top\_file}{top\_file}}
+{\footnotesize\ttfamily std\+::string Factory\+::top\+\_\+file\hspace{0.3cm}{\ttfamily [static]}}
+
+Съдържа текста над инфорамацията с фигурите, на файла който е отворен. 

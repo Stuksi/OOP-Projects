@@ -13,8 +13,7 @@ Inheritance diagram for Line\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_line_ada4c79b43a290fa9d894793f21b24e1b}\label{class_line_ada4c79b43a290fa9d894793f21b24e1b}} 
-{\bfseries Line} (double \+\_\+x1, double \+\_\+y1, double \+\_\+x2, double \+\_\+y2, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
+\mbox{\hyperlink{class_line_ada4c79b43a290fa9d894793f21b24e1b}{Line}} (double \+\_\+x1, double \+\_\+y1, double \+\_\+x2, double \+\_\+y2, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
 \item 
 void \mbox{\hyperlink{class_line_af45d136b44f3919ff3e7c050b6fdc041}{print}} ()
 \item 
@@ -29,34 +28,28 @@ void \mbox{\hyperlink{class_line_aac9315042b920a14cc87e1420b12a187}{write}} (std
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_line_a5b694d665488addbdc5fae0c1cce9c6e}\label{class_line_a5b694d665488addbdc5fae0c1cce9c6e}} 
-double {\bfseries x1}
+double \mbox{\hyperlink{class_line_a5b694d665488addbdc5fae0c1cce9c6e}{x1}}
 \item 
-\mbox{\Hypertarget{class_line_a31e71aeb806cf8182b1e481c74231e60}\label{class_line_a31e71aeb806cf8182b1e481c74231e60}} 
-double {\bfseries y1}
+double \mbox{\hyperlink{class_line_a31e71aeb806cf8182b1e481c74231e60}{y1}}
 \item 
-\mbox{\Hypertarget{class_line_a1f898bcd59ddc7a5b2787840f792e80b}\label{class_line_a1f898bcd59ddc7a5b2787840f792e80b}} 
-double {\bfseries x2}
+double \mbox{\hyperlink{class_line_a1f898bcd59ddc7a5b2787840f792e80b}{x2}}
 \item 
-\mbox{\Hypertarget{class_line_acb49db7526ef893033c436f4065b6d63}\label{class_line_acb49db7526ef893033c436f4065b6d63}} 
-double {\bfseries y2}
+double \mbox{\hyperlink{class_line_acb49db7526ef893033c436f4065b6d63}{y2}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_line}{Line}}. Класът \mbox{\hyperlink{class_line}{Line}} наследява класа \mbox{\hyperlink{class_shape}{Shape}}. Той съдържа допълнителни променливи, като координати на две точки, които при свързването им образуват \mbox{\hyperlink{class_line}{Line}}. 
 
-\begin{DoxyParams}{Parameters}
-{\em x1} & The coordinate on the \textquotesingle{}x\textquotesingle{} axis of the start of the line. \\
-\hline
-{\em y1} & The coordinate on the \textquotesingle{}y\textquotesingle{} axis of the start of the line. \\
-\hline
-{\em x2} & The coordinate on the \textquotesingle{}x\textquotesingle{} axis of the end of the line. \\
-\hline
-{\em y2} & The coordinate on the \textquotesingle{}y\textquotesingle{} axis of the end of the line. \\
-\hline
-\end{DoxyParams}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_line_ada4c79b43a290fa9d894793f21b24e1b}\label{class_line_ada4c79b43a290fa9d894793f21b24e1b}} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{double}]{\+\_\+x1,  }\item[{double}]{\+\_\+y1,  }\item[{double}]{\+\_\+x2,  }\item[{double}]{\+\_\+y2,  }\item[{Color}]{\+\_\+stroke\+\_\+color = {\ttfamily Transperant},  }\item[{double}]{\+\_\+stroke\+\_\+width = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Конструктор за класа \mbox{\hyperlink{class_line}{Line}}. Конструкторът приема допълнителни променливите необходими за съществуването на една линия в равнината, като координати на две точки, които при свързването им образуват \mbox{\hyperlink{class_line}{Line}}. \mbox{\hyperlink{class_line}{Line}} може да има подчертаваща линия, която е с цвят и широчина на щриха. Тези компоненти са наследени от класа \mbox{\hyperlink{class_shape}{Shape}}. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_line_af45d136b44f3919ff3e7c050b6fdc041}\label{class_line_af45d136b44f3919ff3e7c050b6fdc041}} 
@@ -65,47 +58,75 @@ double {\bfseries y2}
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
 {\footnotesize\ttfamily void Line\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Prints in the terminal the shape parameters. 
+Метода се използва за извеждане на информация за обекта в конзолата. 
 
-Implements \mbox{\hyperlink{class_shape}{Shape}}.
+Implements \mbox{\hyperlink{class_shape_a95ca8deca4019d7eed1619a3610700e1}{Shape}}.
 
 \mbox{\Hypertarget{class_line_a42e8f9719e9792f4df584341822f5fb3}\label{class_line_a42e8f9719e9792f4df584341822f5fb3}} 
 \index{Line@{Line}!translate@{translate}}
 \index{translate@{translate}!Line@{Line}}
 \doxysubsubsection{\texorpdfstring{translate()}{translate()}}
-{\footnotesize\ttfamily void Line\+::translate (\begin{DoxyParamCaption}\item[{double}]{horizontal\+\_\+translation = {\ttfamily 0},  }\item[{double}]{vertical\+\_\+translation = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Line\+::translate (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Offsets the shape in a certain direction. 
+Променя разположението на обекта в равнината по подадено изместване по ординатата и абцисата. Метода влияе само на координатите на точките. 
 
-Implements \mbox{\hyperlink{class_shape}{Shape}}.
+Implements \mbox{\hyperlink{class_shape_ac77cd52b168c73ee02e21d4033315cfe}{Shape}}.
 
 \mbox{\Hypertarget{class_line_aa5c43ecb2819ca3da0043ead763f0985}\label{class_line_aa5c43ecb2819ca3da0043ead763f0985}} 
 \index{Line@{Line}!within@{within}}
 \index{within@{within}!Line@{Line}}
 \doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool Line\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_circle}{Circle}} \&}]{circle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Line\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_circle}{Circle}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Check whether a shape is inside the range of a circle. 
+Проверява дали дадения обект се намира изцяло в друг обект \mbox{\hyperlink{class_circle}{Circle}} с дадени параметри. 
 
-Implements \mbox{\hyperlink{class_shape}{Shape}}.
+Implements \mbox{\hyperlink{class_shape_a23900588dfa834a89657d97514969aad}{Shape}}.
 
 \mbox{\Hypertarget{class_line_acd3aa431adbb00da5f8cc19c6d6816cf}\label{class_line_acd3aa431adbb00da5f8cc19c6d6816cf}} 
 \index{Line@{Line}!within@{within}}
 \index{within@{within}!Line@{Line}}
 \doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool Line\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{rectangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Line\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Check whether a shape is inside the range of a rectangle. 
+Проверява дали дадения обект се намира изцяло в друг обект \mbox{\hyperlink{class_rectangle}{Rectangle}} с дадени параметри. 
 
-Implements \mbox{\hyperlink{class_shape}{Shape}}.
+Implements \mbox{\hyperlink{class_shape_a8c5578041093b36cdc06408c48df2678}{Shape}}.
 
 \mbox{\Hypertarget{class_line_aac9315042b920a14cc87e1420b12a187}\label{class_line_aac9315042b920a14cc87e1420b12a187}} 
 \index{Line@{Line}!write@{write}}
 \index{write@{write}!Line@{Line}}
 \doxysubsubsection{\texorpdfstring{write()}{write()}}
-{\footnotesize\ttfamily void Line\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Line\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Output information of the shape to a stream. 
+Метода се използва за записване на информацията на обекта във файл. 
 
-Implements \mbox{\hyperlink{class_shape}{Shape}}.
+Implements \mbox{\hyperlink{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}{Shape}}.
 
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_line_a5b694d665488addbdc5fae0c1cce9c6e}\label{class_line_a5b694d665488addbdc5fae0c1cce9c6e}} 
+\index{Line@{Line}!x1@{x1}}
+\index{x1@{x1}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{x1}{x1}}
+{\footnotesize\ttfamily double Line\+::x1\hspace{0.3cm}{\ttfamily [private]}}
+
+Координатата на \char`\"{}първата\char`\"{} точка по абцисата. \mbox{\Hypertarget{class_line_a1f898bcd59ddc7a5b2787840f792e80b}\label{class_line_a1f898bcd59ddc7a5b2787840f792e80b}} 
+\index{Line@{Line}!x2@{x2}}
+\index{x2@{x2}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{x2}{x2}}
+{\footnotesize\ttfamily double Line\+::x2\hspace{0.3cm}{\ttfamily [private]}}
+
+Координатата на \char`\"{}втората\char`\"{} точка по абцисата. \mbox{\Hypertarget{class_line_a31e71aeb806cf8182b1e481c74231e60}\label{class_line_a31e71aeb806cf8182b1e481c74231e60}} 
+\index{Line@{Line}!y1@{y1}}
+\index{y1@{y1}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{y1}{y1}}
+{\footnotesize\ttfamily double Line\+::y1\hspace{0.3cm}{\ttfamily [private]}}
+
+Координатата на \char`\"{}първата\char`\"{} точка по ординатата. \mbox{\Hypertarget{class_line_acb49db7526ef893033c436f4065b6d63}\label{class_line_acb49db7526ef893033c436f4065b6d63}} 
+\index{Line@{Line}!y2@{y2}}
+\index{y2@{y2}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{y2}{y2}}
+{\footnotesize\ttfamily double Line\+::y2\hspace{0.3cm}{\ttfamily [private]}}
+
+Координатата на \char`\"{}втората\char`\"{} точка по ординатата. 

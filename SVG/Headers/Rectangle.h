@@ -4,40 +4,46 @@
 #include "Shape.h"
 
 /**
- * @param x
- * The x property describes the horizontal coordinate of the position of the element.
- * @param y
- * The y property describes the vertical coordinate of the position of the element.
- * @param width
- * This property specifies the width of the rectangle.
- * Negative values for 'width' are illegal.
- * @param height
- * This property specifies the height of the rectangle.
- * Negative values for 'height' are illegal.
- * @param rx
- * The rx property describes the horizontal curve radius of the rectangle.
- * A negative value for rx is illegal.
- * @param ry
- * The ry property describes the vertical curve radius of the rectangle.
- * A negative value for ry is illegal.
+ * Клас Rectangle.
+ * Класът Rectangle наследява класа Shape. Той съдържа допълнителни променливи,
+ * като координатите на "стартова" точка за правоъгълник в равнината, както и дължината
+ * и височина на фигурата и радиуси на заобляне на ръбовете на правоъгълника.
  */
 
 class Rectangle : public Shape {
 private:
-    double x, y, rx, ry, width, height;
+    double x; /**< Координатата по абцисата на "стартовата" точка на правоъгълника. */
+    double y; /**< Координатата по ординатата на "стартовата" точка на правоъгълника. */
+    double rx; /**< Радиус на заобляне на ръбовете на правоъгълника по ординатата. */
+    double ry; /**< Радиус на заобляне на ръбовете на правоъгълника по абцисата. */
+    double width; /**< Дължината на правоъгълника. */
+    double height; /**< Височината на правоъгълника. */
 public:
+
+    /**
+     * Конструктор за класа Rectangle. 
+     * Конструкторът приема допълнителни променливите необходими за съществуването на един правоъгълник в равнината, 
+     * като координати на "стартова" точка, дължината и височина на правоъгълника. Rectangle може да има и цвят, както
+     * и подчертаваща линия, която е също с цвят и широчина на щриха. Тези компоненти са наследени
+     * от класа Shape. Също правоъгълника може да има и радиуси на заобляне на ръбовете на фигурата по двете оси. 
+     */
     Rectangle(double _x, double _y, double _width, double _height, Color _color, double _rx = 0, double _ry = 0, Color _stroke_color = Transperant, double _stroke_width = 0) 
     : x(_x), y(_y), width(_width), height(_height), rx(_rx), ry(_ry), Shape(_color, _stroke_color, _stroke_width) {}
     
-    void print();
-    void translate(double, double);
-    bool within(const Rectangle&);
-    bool within(const Circle&);
-    void write(std::ostream&);
+    void print(); /**< Метода се използва за извеждане на информация за обекта в конзолата. */
+    void translate(double, double); /**< Променя разположението на обекта в равнината по подадено изместване по ординатата и абцисата. 
+                                         Метода влияе само на координатите на "стартовата" точка на фигурата.*/
+    bool within(const Rectangle&); /**< Проверява дали дадения обект се намира изцяло в друг обект Rectangle с дадени параметри. */
+    bool within(const Circle&); /**< Проверява дали дадения обект се намира изцяло в друг обект Circle с дадени параметри. */
+    void write(std::ostream&); /**< Метода се използва за записване на информацията на обекта във файл. */
 
+    /** \return Дава координатата по абцисата на "стартовата" точка на Rectangle. */
     double get_x() const;
+    /** \return Дава координатата по ординатата на "стартовата" точка на Rectangle. */
     double get_y() const;
+    /** \return Дава дължината на Rectangle. */
     double get_width() const;
+    /** \return Дава височината на Rectangle. */
     double get_height() const;
 };
 

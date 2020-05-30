@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['within_30',['within',['../class_circle.html#aa2a08bf96b70e6e5040acdc4ddbb77f0',1,'Circle::within(const Rectangle &amp;)'],['../class_circle.html#a0f9cca26b853535b1d8ca66dd5363bc8',1,'Circle::within(const Circle &amp;)'],['../class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf',1,'Line::within(const Rectangle &amp;)'],['../class_line.html#aa5c43ecb2819ca3da0043ead763f0985',1,'Line::within(const Circle &amp;)'],['../class_rectangle.html#a34803112d958ea9351063694a5e8eeda',1,'Rectangle::within(const Rectangle &amp;)'],['../class_rectangle.html#a93d786a080c4fc1e3c35f88369c9cce8',1,'Rectangle::within(const Circle &amp;)']]],
-  ['write_31',['write',['../class_circle.html#a545ea69c6b0a4055fe311a98c54fcc2e',1,'Circle::write()'],['../class_line.html#aac9315042b920a14cc87e1420b12a187',1,'Line::write()'],['../class_rectangle.html#a4ccfdbd63d953c9f626f50aa60bd5a77',1,'Rectangle::write()']]]
+  ['to_5flower_5fcase_42',['to_lower_case',['../class_factory.html#a86b4d8551d61930c83339d993e0b5147',1,'Factory']]],
+  ['top_5ffile_43',['top_file',['../class_factory.html#a5d47d8e0a7e196a4428788e4803ad97e',1,'Factory']]],
+  ['translate_44',['translate',['../class_circle.html#a77c4d50b89023412c735c2f19182e475',1,'Circle::translate()'],['../class_c_m_d.html#a56f1c39ca50dd124b552a77493962a19',1,'CMD::translate()'],['../class_line.html#a42e8f9719e9792f4df584341822f5fb3',1,'Line::translate()'],['../class_polygon.html#a2004afcd96c3b6b1e4f6cb4eafe50faa',1,'Polygon::translate()'],['../class_rectangle.html#a84bb25950798e189a8d2a1f28a60a270',1,'Rectangle::translate()'],['../class_shape.html#ac77cd52b168c73ee02e21d4033315cfe',1,'Shape::translate()']]]
 ];

@@ -1,0 +1,116 @@
+\hypertarget{class_polygon}{}\doxysection{Polygon Class Reference}
+\label{class_polygon}\index{Polygon@{Polygon}}
+
+
+{\ttfamily \#include $<$Polygon.\+h$>$}
+
+Inheritance diagram for Polygon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_polygon}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_polygon_adb39dee67ebb4fc4992c0cf46f12ddac}{Polygon}} (std\+::vector$<$ double $>$ \+\_\+x\+\_\+points, std\+::vector$<$ double $>$ \+\_\+y\+\_\+points, Color \+\_\+color, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
+\item 
+void \mbox{\hyperlink{class_polygon_a60830487fc3c6b815aa577e9dd758b51}{print}} ()
+\item 
+void \mbox{\hyperlink{class_polygon_a2004afcd96c3b6b1e4f6cb4eafe50faa}{translate}} (double, double)
+\item 
+bool \mbox{\hyperlink{class_polygon_a3eaaff27c70a7eaf18935e4d40a42680}{within}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&)
+\item 
+bool \mbox{\hyperlink{class_polygon_a7d6a6981c38b2995e6c51c9a9d54a499}{within}} (const \mbox{\hyperlink{class_circle}{Circle}} \&)
+\item 
+void \mbox{\hyperlink{class_polygon_a9332acfbf6c303d2c8d3b24cad05af7b}{write}} (std\+::ostream \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_polygon_a99d29282bbf28d94796dc482643788a7}{x\+\_\+points}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_polygon_a53ed545ed5ea6bac4bb9db25fa66a19f}{y\+\_\+points}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_polygon}{Polygon}}. Класът \mbox{\hyperlink{class_polygon}{Polygon}} наследява класа \mbox{\hyperlink{class_shape}{Shape}}. Той съдържа допълнителни променливи, като \char`\"{}програмистки\char`\"{} вектори от координатите на точките на многоъгълниката по ординатата и абцисата. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_polygon_adb39dee67ebb4fc4992c0cf46f12ddac}\label{class_polygon_adb39dee67ebb4fc4992c0cf46f12ddac}} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{\+\_\+x\+\_\+points,  }\item[{std\+::vector$<$ double $>$}]{\+\_\+y\+\_\+points,  }\item[{Color}]{\+\_\+color,  }\item[{Color}]{\+\_\+stroke\+\_\+color = {\ttfamily Transperant},  }\item[{double}]{\+\_\+stroke\+\_\+width = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор за класа \mbox{\hyperlink{class_polygon}{Polygon}}. Конструкторът приема допълнителни променливите необходими за съществуването на един многоъгълник в равнината, като координатите на точките образуващи фигурата. \mbox{\hyperlink{class_polygon}{Polygon}} може да има и цвят, както и подчертаваща линия, която е също с цвят и широчина на щриха. Тези компоненти са наследени от класа \mbox{\hyperlink{class_shape}{Shape}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_polygon_a60830487fc3c6b815aa577e9dd758b51}\label{class_polygon_a60830487fc3c6b815aa577e9dd758b51}} 
+\index{Polygon@{Polygon}!print@{print}}
+\index{print@{print}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Polygon\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Метода се използва за извеждане на информация за обекта в конзолата. 
+
+Implements \mbox{\hyperlink{class_shape_a95ca8deca4019d7eed1619a3610700e1}{Shape}}.
+
+\mbox{\Hypertarget{class_polygon_a2004afcd96c3b6b1e4f6cb4eafe50faa}\label{class_polygon_a2004afcd96c3b6b1e4f6cb4eafe50faa}} 
+\index{Polygon@{Polygon}!translate@{translate}}
+\index{translate@{translate}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily void Polygon\+::translate (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Променя разположението на обекта в равнината по подадено изместване по ординатата и абцисата. Метода влияе само на координатите на точките образуващи многоъгълника. 
+
+Implements \mbox{\hyperlink{class_shape_ac77cd52b168c73ee02e21d4033315cfe}{Shape}}.
+
+\mbox{\Hypertarget{class_polygon_a7d6a6981c38b2995e6c51c9a9d54a499}\label{class_polygon_a7d6a6981c38b2995e6c51c9a9d54a499}} 
+\index{Polygon@{Polygon}!within@{within}}
+\index{within@{within}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Polygon\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_circle}{Circle}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Проверява дали дадения обект се намира изцяло в друг обект \mbox{\hyperlink{class_circle}{Circle}} с дадени параметри. 
+
+Implements \mbox{\hyperlink{class_shape_a23900588dfa834a89657d97514969aad}{Shape}}.
+
+\mbox{\Hypertarget{class_polygon_a3eaaff27c70a7eaf18935e4d40a42680}\label{class_polygon_a3eaaff27c70a7eaf18935e4d40a42680}} 
+\index{Polygon@{Polygon}!within@{within}}
+\index{within@{within}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Polygon\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Проверява дали дадения обект се намира изцяло в друг обект \mbox{\hyperlink{class_rectangle}{Rectangle}} с дадени параметри. 
+
+Implements \mbox{\hyperlink{class_shape_a8c5578041093b36cdc06408c48df2678}{Shape}}.
+
+\mbox{\Hypertarget{class_polygon_a9332acfbf6c303d2c8d3b24cad05af7b}\label{class_polygon_a9332acfbf6c303d2c8d3b24cad05af7b}} 
+\index{Polygon@{Polygon}!write@{write}}
+\index{write@{write}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Polygon\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Метода се използва за записване на информацията на обекта във файл. 
+
+Implements \mbox{\hyperlink{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}{Shape}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_polygon_a99d29282bbf28d94796dc482643788a7}\label{class_polygon_a99d29282bbf28d94796dc482643788a7}} 
+\index{Polygon@{Polygon}!x\_points@{x\_points}}
+\index{x\_points@{x\_points}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{x\_points}{x\_points}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Polygon\+::x\+\_\+points\hspace{0.3cm}{\ttfamily [private]}}
+
+Координатите на точките по абцисата. \mbox{\Hypertarget{class_polygon_a53ed545ed5ea6bac4bb9db25fa66a19f}\label{class_polygon_a53ed545ed5ea6bac4bb9db25fa66a19f}} 
+\index{Polygon@{Polygon}!y\_points@{y\_points}}
+\index{y\_points@{y\_points}!Polygon@{Polygon}}
+\doxysubsubsection{\texorpdfstring{y\_points}{y\_points}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Polygon\+::y\+\_\+points\hspace{0.3cm}{\ttfamily [private]}}
+
+Координатите на точките по ординатата. 

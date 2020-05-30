@@ -22,18 +22,20 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "SVG Documentation", "index.html", [
-    [ "Scalable Vector Graphics", "index.html", [
-      [ "Introduction", "index.html#Introduction", null ],
-      [ "Sources", "index.html#Sources", null ]
-    ] ],
+  [ "Scalable Vector Graphics", "index.html", [
+    [ "Introduction", "index.html#Introduction", null ],
+    [ "The Program", "index.html#About", null ],
+    [ "Improvements", "index.html#Improvements", null ],
+    [ "Sources", "index.html#Sources", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ]
   ] ]

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SVG Documentation: C:/Users/grozd/Desktop/Main/OOP/Documentation Transitions/Line.h Source File</title>
+<title>Scalable Vector Graphics: C:/Users/grozd/Desktop/Main/OOP/Projects/OOP-Projects/SVG/Headers/Line.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SVG Documentation
+   <div id="projectname">Scalable Vector Graphics
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -100,35 +100,44 @@ $(document).ready(function(){initNavTree('_line_8h_source.html',''); initResizab
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Shape.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_line.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_line.html">Line</a> : <span class="keyword">public</span> <a class="code" href="class_shape.html">Shape</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">double</span> x1, y1, x2, y2;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_line.html">Line</a>(<span class="keywordtype">double</span> _x1, <span class="keywordtype">double</span> _y1, <span class="keywordtype">double</span> _x2, <span class="keywordtype">double</span> _y2, Color _stroke_color = Transperant, <span class="keywordtype">double</span> _stroke_width = 0)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : x1(_x1), y1(_y1), x2(_x2), y2(_y2), <a class="code" href="class_shape.html">Shape</a>(Transperant, _stroke_color, _stroke_width) {}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line.html#af45d136b44f3919ff3e7c050b6fdc041">print</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line.html#a42e8f9719e9792f4df584341822f5fb3">translate</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf">within</a>(<span class="keyword">const</span> <a class="code" href="class_rectangle.html">Rectangle</a>&amp;);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf">within</a>(<span class="keyword">const</span> <a class="code" href="class_circle.html">Circle</a>&amp;);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line.html#aac9315042b920a14cc87e1420b12a187">write</a>(std::ostream&amp;);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_line.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_line.html">Line</a> : <span class="keyword">public</span> <a class="code" href="class_shape.html">Shape</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_line.html#a5b694d665488addbdc5fae0c1cce9c6e">   14</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_line.html#a5b694d665488addbdc5fae0c1cce9c6e">x1</a>; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_line.html#a31e71aeb806cf8182b1e481c74231e60">   15</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_line.html#a31e71aeb806cf8182b1e481c74231e60">y1</a>; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_line.html#a1f898bcd59ddc7a5b2787840f792e80b">   16</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_line.html#a1f898bcd59ddc7a5b2787840f792e80b">x2</a>; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_line.html#acb49db7526ef893033c436f4065b6d63">   17</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_line.html#acb49db7526ef893033c436f4065b6d63">y2</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_line.html#ada4c79b43a290fa9d894793f21b24e1b">   27</a></span>&#160;    <a class="code" href="class_line.html#ada4c79b43a290fa9d894793f21b24e1b">Line</a>(<span class="keywordtype">double</span> _x1, <span class="keywordtype">double</span> _y1, <span class="keywordtype">double</span> _x2, <span class="keywordtype">double</span> _y2, Color _stroke_color = Transperant, <span class="keywordtype">double</span> _stroke_width = 0)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    : <a class="code" href="class_line.html#a5b694d665488addbdc5fae0c1cce9c6e">x1</a>(_x1), <a class="code" href="class_line.html#a31e71aeb806cf8182b1e481c74231e60">y1</a>(_y1), <a class="code" href="class_line.html#a1f898bcd59ddc7a5b2787840f792e80b">x2</a>(_x2), <a class="code" href="class_line.html#acb49db7526ef893033c436f4065b6d63">y2</a>(_y2), <a class="code" href="class_shape.html">Shape</a>(Transperant, _stroke_color, _stroke_width) {}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line.html#af45d136b44f3919ff3e7c050b6fdc041">print</a>(); </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line.html#a42e8f9719e9792f4df584341822f5fb3">translate</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>); </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf">within</a>(<span class="keyword">const</span> <a class="code" href="class_rectangle.html">Rectangle</a>&amp;); </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf">within</a>(<span class="keyword">const</span> <a class="code" href="class_circle.html">Circle</a>&amp;); </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line.html#aac9315042b920a14cc87e1420b12a187">write</a>(std::ostream&amp;); </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdef"><b>Definition:</b> Circle.h:15</div></div>
-<div class="ttc" id="aclass_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> Shape.h:21</div></div>
-<div class="ttc" id="aclass_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:25</div></div>
-<div class="ttc" id="aclass_line_html_af45d136b44f3919ff3e7c050b6fdc041"><div class="ttname"><a href="class_line.html#af45d136b44f3919ff3e7c050b6fdc041">Line::print</a></div><div class="ttdeci">void print()</div><div class="ttdef"><b>Definition:</b> Line.cpp:19</div></div>
-<div class="ttc" id="aclass_line_html"><div class="ttname"><a href="class_line.html">Line</a></div><div class="ttdef"><b>Definition:</b> Line.h:17</div></div>
-<div class="ttc" id="aclass_line_html_aac9315042b920a14cc87e1420b12a187"><div class="ttname"><a href="class_line.html#aac9315042b920a14cc87e1420b12a187">Line::write</a></div><div class="ttdeci">void write(std::ostream &amp;)</div><div class="ttdef"><b>Definition:</b> Line.cpp:53</div></div>
-<div class="ttc" id="aclass_line_html_acd3aa431adbb00da5f8cc19c6d6816cf"><div class="ttname"><a href="class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf">Line::within</a></div><div class="ttdeci">bool within(const Rectangle &amp;)</div><div class="ttdef"><b>Definition:</b> Line.cpp:39</div></div>
-<div class="ttc" id="aclass_line_html_a42e8f9719e9792f4df584341822f5fb3"><div class="ttname"><a href="class_line.html#a42e8f9719e9792f4df584341822f5fb3">Line::translate</a></div><div class="ttdeci">void translate(double, double)</div><div class="ttdef"><b>Definition:</b> Line.cpp:32</div></div>
+<div class="ttc" id="aclass_line_html_ada4c79b43a290fa9d894793f21b24e1b"><div class="ttname"><a href="class_line.html#ada4c79b43a290fa9d894793f21b24e1b">Line::Line</a></div><div class="ttdeci">Line(double _x1, double _y1, double _x2, double _y2, Color _stroke_color=Transperant, double _stroke_width=0)</div><div class="ttdef"><b>Definition:</b> Line.h:27</div></div>
+<div class="ttc" id="aclass_line_html_a31e71aeb806cf8182b1e481c74231e60"><div class="ttname"><a href="class_line.html#a31e71aeb806cf8182b1e481c74231e60">Line::y1</a></div><div class="ttdeci">double y1</div><div class="ttdef"><b>Definition:</b> Line.h:15</div></div>
+<div class="ttc" id="aclass_line_html_a1f898bcd59ddc7a5b2787840f792e80b"><div class="ttname"><a href="class_line.html#a1f898bcd59ddc7a5b2787840f792e80b">Line::x2</a></div><div class="ttdeci">double x2</div><div class="ttdef"><b>Definition:</b> Line.h:16</div></div>
+<div class="ttc" id="aclass_line_html_a5b694d665488addbdc5fae0c1cce9c6e"><div class="ttname"><a href="class_line.html#a5b694d665488addbdc5fae0c1cce9c6e">Line::x1</a></div><div class="ttdeci">double x1</div><div class="ttdef"><b>Definition:</b> Line.h:14</div></div>
+<div class="ttc" id="aclass_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdef"><b>Definition:</b> Circle.h:12</div></div>
+<div class="ttc" id="aclass_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> Shape.h:20</div></div>
+<div class="ttc" id="aclass_line_html_acb49db7526ef893033c436f4065b6d63"><div class="ttname"><a href="class_line.html#acb49db7526ef893033c436f4065b6d63">Line::y2</a></div><div class="ttdeci">double y2</div><div class="ttdef"><b>Definition:</b> Line.h:17</div></div>
+<div class="ttc" id="aclass_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:13</div></div>
+<div class="ttc" id="aclass_line_html_af45d136b44f3919ff3e7c050b6fdc041"><div class="ttname"><a href="class_line.html#af45d136b44f3919ff3e7c050b6fdc041">Line::print</a></div><div class="ttdeci">void print()</div></div>
+<div class="ttc" id="aclass_line_html"><div class="ttname"><a href="class_line.html">Line</a></div><div class="ttdef"><b>Definition:</b> Line.h:12</div></div>
+<div class="ttc" id="aclass_line_html_aac9315042b920a14cc87e1420b12a187"><div class="ttname"><a href="class_line.html#aac9315042b920a14cc87e1420b12a187">Line::write</a></div><div class="ttdeci">void write(std::ostream &amp;)</div></div>
+<div class="ttc" id="aclass_line_html_acd3aa431adbb00da5f8cc19c6d6816cf"><div class="ttname"><a href="class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf">Line::within</a></div><div class="ttdeci">bool within(const Rectangle &amp;)</div></div>
+<div class="ttc" id="aclass_line_html_a42e8f9719e9792f4df584341822f5fb3"><div class="ttname"><a href="class_line.html#a42e8f9719e9792f4df584341822f5fb3">Line::translate</a></div><div class="ttdeci">void translate(double, double)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_a5df60b1bb3c2017cdb078fca3471fa1.html">grozd</a></li><li class="navelem"><a class="el" href="dir_42d714e42a6d44cc2858c5175ca2fa93.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_6066d686db7f672078f69334a59df76f.html">Main</a></li><li class="navelem"><a class="el" href="dir_1678cb77921a4558e7272df07956b813.html">OOP</a></li><li class="navelem"><a class="el" href="dir_57bb80df48c306c45518826418c677b7.html">Documentation Transitions</a></li><li class="navelem"><b>Line.h</b></li>
+    <li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_a5df60b1bb3c2017cdb078fca3471fa1.html">grozd</a></li><li class="navelem"><a class="el" href="dir_42d714e42a6d44cc2858c5175ca2fa93.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_6066d686db7f672078f69334a59df76f.html">Main</a></li><li class="navelem"><a class="el" href="dir_1678cb77921a4558e7272df07956b813.html">OOP</a></li><li class="navelem"><a class="el" href="dir_616c59925d40728350e5d3d357bf2bb8.html">Projects</a></li><li class="navelem"><a class="el" href="dir_f93f1c499d30bd9828307df7ea9f39f2.html">OOP-Projects</a></li><li class="navelem"><a class="el" href="dir_daae37d7f9d385c4b57012bccd1e1ca2.html">SVG</a></li><li class="navelem"><a class="el" href="dir_0a5c2757ed23013b1f01d0afae0c5a03.html">Headers</a></li><li class="navelem"><b>Line.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

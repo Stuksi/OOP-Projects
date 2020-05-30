@@ -1,91 +1,123 @@
 \hypertarget{class_c_m_d}{}\doxysection{C\+MD Class Reference}
 \label{class_c_m_d}\index{CMD@{CMD}}
+
+
+{\ttfamily \#include $<$Command\+\_\+\+Prompt.\+h$>$}
+
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{class_c_m_d_a6cee13cc2443912911f64f2f57f62ddb}{open}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage, std\+::ifstream \&r\+\_\+file, std\+::string \&file\+\_\+name)
+static void \mbox{\hyperlink{class_c_m_d_a82cfb7455a7c13851cd32338b7c8159b}{open}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::ifstream \&, std\+::string \&)
 \item 
-static void \mbox{\hyperlink{class_c_m_d_a1a5890abe760d9cc6cbe2ea1243bafaa}{close}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::ifstream \&r\+\_\+file, std\+::string \&file\+\_\+name)
+static void \mbox{\hyperlink{class_c_m_d_a9b8d671555a8a380159b912c6cf0804a}{close}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::ifstream \&, std\+::string \&)
 \item 
-static void \mbox{\hyperlink{class_c_m_d_a492601c3a9178dcae416ddd78de1aacb}{save}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::ifstream \&r\+\_\+file, std\+::string \&file\+\_\+name)
+static void \mbox{\hyperlink{class_c_m_d_a3e2064f8d0e75bcd383be31251af6041}{save}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::ifstream \&, std\+::string \&)
 \item 
-static void \mbox{\hyperlink{class_c_m_d_a4b6206f0262f8933813b8a85f1616de1}{saveas}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage, std\+::ifstream \&r\+\_\+file)
+static void \mbox{\hyperlink{class_c_m_d_a56c7955c51b4f8ec0117a7b7b6d9fd24}{saveas}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::vector$<$ std\+::string $>$, std\+::ifstream \&)
 \item 
-static void \mbox{\hyperlink{class_c_m_d_a44804a50a1c82517afafbb8022e04759}{help}} ()
+static void \mbox{\hyperlink{class_c_m_d_acfcd4714aebc2847cc10a147b0370e20}{help}} ()
 \item 
-static void \mbox{\hyperlink{class_c_m_d_a3d336cf295682cf1a211f4c53ef42c10}{parameters}} ()
+static void \mbox{\hyperlink{class_c_m_d_a69ee8253106be535ff2d5a51f5cd957e}{parameters}} ()
 \item 
-\mbox{\Hypertarget{class_c_m_d_aa70db66399018d22da682f134fdda2ea}\label{class_c_m_d_aa70db66399018d22da682f134fdda2ea}} 
-static void {\bfseries print} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes)
+static void \mbox{\hyperlink{class_c_m_d_aa51bf7e81ab682e2890a83bbb7be70bb}{print}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&)
 \item 
-\mbox{\Hypertarget{class_c_m_d_a0570f00114ee09694899b91581492af2}\label{class_c_m_d_a0570f00114ee09694899b91581492af2}} 
-static void {\bfseries create} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+static void \mbox{\hyperlink{class_c_m_d_ad35f751618e1c785264b824bc694daa1}{create}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::vector$<$ std\+::string $>$)
 \item 
-\mbox{\Hypertarget{class_c_m_d_a532b25f8b0a9f4d8cc119b415720dabb}\label{class_c_m_d_a532b25f8b0a9f4d8cc119b415720dabb}} 
-static void {\bfseries erase} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+static void \mbox{\hyperlink{class_c_m_d_a49a12083f8e40c8752b4d6911393f5e6}{erase}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::vector$<$ std\+::string $>$)
 \item 
-\mbox{\Hypertarget{class_c_m_d_abf600ad717d61179d27e12a3fbb1a84a}\label{class_c_m_d_abf600ad717d61179d27e12a3fbb1a84a}} 
-static void {\bfseries translate} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+static void \mbox{\hyperlink{class_c_m_d_a56f1c39ca50dd124b552a77493962a19}{translate}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::vector$<$ std\+::string $>$)
 \item 
-\mbox{\Hypertarget{class_c_m_d_a083d5cb68d176cef892fbbf94ede7e1e}\label{class_c_m_d_a083d5cb68d176cef892fbbf94ede7e1e}} 
-static void {\bfseries within} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&shapes, std\+::vector$<$ std\+::string $>$ info\+\_\+storage)
+static void \mbox{\hyperlink{class_c_m_d_ae57c4d4a7bf105e33dedb091188fde14}{within}} (std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&, std\+::vector$<$ std\+::string $>$)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static bool \mbox{\hyperlink{class_c_m_d_a7e7ed50f3fb7bbe3c4d2dc389178fb39}{exists}} (std\+::string file\+\_\+name)
+static bool \mbox{\hyperlink{class_c_m_d_a9a55e91dc2b7d4b751abb16b8eb186de}{exists}} (std\+::string)
 \item 
-static bool \mbox{\hyperlink{class_c_m_d_add39b9723060cc293ab6134358e657a7}{empty\+\_\+file}} (std\+::string file\+\_\+name)
+static bool \mbox{\hyperlink{class_c_m_d_ab43340d7f9464417ab2c4d9db06c0651}{empty\+\_\+file}} (std\+::string)
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_c_m_d}{C\+MD}}. Класът \mbox{\hyperlink{class_c_m_d}{C\+MD}} е помощен клас, който се използва за извикване и обработка на различните функции, които програмата трябва да поддържа с цел да е отделно от програмата която прочита входа от конзолата. 
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_c_m_d_a1a5890abe760d9cc6cbe2ea1243bafaa}\label{class_c_m_d_a1a5890abe760d9cc6cbe2ea1243bafaa}} 
+\mbox{\Hypertarget{class_c_m_d_a9b8d671555a8a380159b912c6cf0804a}\label{class_c_m_d_a9b8d671555a8a380159b912c6cf0804a}} 
 \index{CMD@{CMD}!close@{close}}
 \index{close@{close}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{close()}{close()}}
-{\footnotesize\ttfamily void C\+M\+D\+::close (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::ifstream \&}]{r\+\_\+file,  }\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void C\+M\+D\+::close (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::ifstream \&}]{,  }\item[{std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Closes the opened file and removes the information of it from the system. \mbox{\Hypertarget{class_c_m_d_add39b9723060cc293ab6134358e657a7}\label{class_c_m_d_add39b9723060cc293ab6134358e657a7}} 
+Затваря отворения файл и изчиства информацията му от системата. \mbox{\Hypertarget{class_c_m_d_ad35f751618e1c785264b824bc694daa1}\label{class_c_m_d_ad35f751618e1c785264b824bc694daa1}} 
+\index{CMD@{CMD}!create@{create}}
+\index{create@{create}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::create (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::vector$<$ std\+::string $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Създава нова фигура по подаден низ. \mbox{\Hypertarget{class_c_m_d_ab43340d7f9464417ab2c4d9db06c0651}\label{class_c_m_d_ab43340d7f9464417ab2c4d9db06c0651}} 
 \index{CMD@{CMD}!empty\_file@{empty\_file}}
 \index{empty\_file@{empty\_file}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{empty\_file()}{empty\_file()}}
-{\footnotesize\ttfamily bool C\+M\+D\+::empty\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily static bool C\+M\+D\+::empty\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-Checks whether the file is empty. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_a7e7ed50f3fb7bbe3c4d2dc389178fb39}\label{class_c_m_d_a7e7ed50f3fb7bbe3c4d2dc389178fb39}} 
+Проверява дали даден файл е празен по името на файла. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_a49a12083f8e40c8752b4d6911393f5e6}\label{class_c_m_d_a49a12083f8e40c8752b4d6911393f5e6}} 
+\index{CMD@{CMD}!erase@{erase}}
+\index{erase@{erase}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::erase (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::vector$<$ std\+::string $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Изтрива дадена фигура по подаден пореден номер. \mbox{\Hypertarget{class_c_m_d_a9a55e91dc2b7d4b751abb16b8eb186de}\label{class_c_m_d_a9a55e91dc2b7d4b751abb16b8eb186de}} 
 \index{CMD@{CMD}!exists@{exists}}
 \index{exists@{exists}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{exists()}{exists()}}
-{\footnotesize\ttfamily bool C\+M\+D\+::exists (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily static bool C\+M\+D\+::exists (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-By a given string(file name), find if the file exists in the current directory. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_a44804a50a1c82517afafbb8022e04759}\label{class_c_m_d_a44804a50a1c82517afafbb8022e04759}} 
+Проверява дали даден файл съществува по името на файла. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_acfcd4714aebc2847cc10a147b0370e20}\label{class_c_m_d_acfcd4714aebc2847cc10a147b0370e20}} 
 \index{CMD@{CMD}!help@{help}}
 \index{help@{help}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{help()}{help()}}
-{\footnotesize\ttfamily void C\+M\+D\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void C\+M\+D\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Outputs a helper menu, to show the available user commands. \mbox{\Hypertarget{class_c_m_d_a6cee13cc2443912911f64f2f57f62ddb}\label{class_c_m_d_a6cee13cc2443912911f64f2f57f62ddb}} 
+Извежда информация за всички поддържани от програмата команди. \mbox{\Hypertarget{class_c_m_d_a82cfb7455a7c13851cd32338b7c8159b}\label{class_c_m_d_a82cfb7455a7c13851cd32338b7c8159b}} 
 \index{CMD@{CMD}!open@{open}}
 \index{open@{open}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{open()}{open()}}
-{\footnotesize\ttfamily void C\+M\+D\+::open (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::vector$<$ std\+::string $>$}]{info\+\_\+storage,  }\item[{std\+::ifstream \&}]{r\+\_\+file,  }\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void C\+M\+D\+::open (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::ifstream \&}]{,  }\item[{std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Opens a file, and reads its information to the system, ready to be modified. \mbox{\Hypertarget{class_c_m_d_a3d336cf295682cf1a211f4c53ef42c10}\label{class_c_m_d_a3d336cf295682cf1a211f4c53ef42c10}} 
+Отваря даден файл и записва информацията за фигурите от него в системата. \mbox{\Hypertarget{class_c_m_d_a69ee8253106be535ff2d5a51f5cd957e}\label{class_c_m_d_a69ee8253106be535ff2d5a51f5cd957e}} 
 \index{CMD@{CMD}!parameters@{parameters}}
 \index{parameters@{parameters}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
-{\footnotesize\ttfamily void C\+M\+D\+::parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void C\+M\+D\+::parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Show information about all the supported shapes. \mbox{\Hypertarget{class_c_m_d_a492601c3a9178dcae416ddd78de1aacb}\label{class_c_m_d_a492601c3a9178dcae416ddd78de1aacb}} 
+Извежда информация за всички фигури и параметрите които имат. \mbox{\Hypertarget{class_c_m_d_aa51bf7e81ab682e2890a83bbb7be70bb}\label{class_c_m_d_aa51bf7e81ab682e2890a83bbb7be70bb}} 
+\index{CMD@{CMD}!print@{print}}
+\index{print@{print}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::print (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Извежда информацията на всички фигури в системата в терминала. \mbox{\Hypertarget{class_c_m_d_a3e2064f8d0e75bcd383be31251af6041}\label{class_c_m_d_a3e2064f8d0e75bcd383be31251af6041}} 
 \index{CMD@{CMD}!save@{save}}
 \index{save@{save}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{save()}{save()}}
-{\footnotesize\ttfamily void C\+M\+D\+::save (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::ifstream \&}]{r\+\_\+file,  }\item[{std\+::string \&}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void C\+M\+D\+::save (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::ifstream \&}]{,  }\item[{std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Saves the current information in the system to the same file it was read from. \mbox{\Hypertarget{class_c_m_d_a4b6206f0262f8933813b8a85f1616de1}\label{class_c_m_d_a4b6206f0262f8933813b8a85f1616de1}} 
+Запазва обработената от системата информация в същия файл, който е отворен. \mbox{\Hypertarget{class_c_m_d_a56c7955c51b4f8ec0117a7b7b6d9fd24}\label{class_c_m_d_a56c7955c51b4f8ec0117a7b7b6d9fd24}} 
 \index{CMD@{CMD}!saveas@{saveas}}
 \index{saveas@{saveas}!CMD@{CMD}}
 \doxysubsubsection{\texorpdfstring{saveas()}{saveas()}}
-{\footnotesize\ttfamily void C\+M\+D\+::saveas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{shapes,  }\item[{std\+::vector$<$ std\+::string $>$}]{info\+\_\+storage,  }\item[{std\+::ifstream \&}]{r\+\_\+file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void C\+M\+D\+::saveas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::ifstream \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Saves the current information in the system to a specific file. 
+Запазва обработената от системата информация във файл посочен от потребителя по име. Ако този файл не съществува, се създава нов с това име. \mbox{\Hypertarget{class_c_m_d_a56f1c39ca50dd124b552a77493962a19}\label{class_c_m_d_a56f1c39ca50dd124b552a77493962a19}} 
+\index{CMD@{CMD}!translate@{translate}}
+\index{translate@{translate}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::translate (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::vector$<$ std\+::string $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Измества дадена фигура(всички фигури) по подадени параметри за преместване. \mbox{\Hypertarget{class_c_m_d_ae57c4d4a7bf105e33dedb091188fde14}\label{class_c_m_d_ae57c4d4a7bf105e33dedb091188fde14}} 
+\index{CMD@{CMD}!within@{within}}
+\index{within@{within}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::within (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_shape}{Shape}} $\ast$ $>$ \&}]{,  }\item[{std\+::vector$<$ std\+::string $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Извежда всички фигури, които са в даден обсег посочен от потребителя. 

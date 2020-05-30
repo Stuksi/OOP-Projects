@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rectangle_36',['Rectangle',['../class_rectangle.html',1,'']]]
+  ['polygon_60',['Polygon',['../class_polygon.html',1,'']]]
 ];

@@ -1,43 +1,47 @@
 #ifndef STROKE_H
 #define STROKE_H
 
-// Enum to define some basic color values.
+/**
+ * Поддържаните цветове от програмата.
+ */
 enum Color {
-    Transperant,
-    Red,
-    Green,
-    Blue,
-    Black,
-    White,
-    Orange,
-    Pink,
-    Purple,
-    Cyan,
-    Brown,
-    Lime
+    Transperant, /**< Безцветен */
+    Red, /**< Червен */
+    Green, /**< Зелен */
+    Blue, /**< Син */
+    Black, /**< Черен */
+    White, /**< Бял */
+    Orange, /**< Оранжев */
+    Pink, /**< Розов */
+    Purple, /**< Лилав */
+    Cyan, /**< Тюркоаз */
+    Brown, /**< Кафяв */
+    Lime /**< Светло Зелен */
 };
 
 /**
- * @class Stroke
- * Class representing the stroke over the shape.
- * @param stroke_color
- * Defines the color of the stroke.
- * @param stroke_width
- * Defines the width of the stroke.
- * @fn Color Stroke::get_color()
- * Accessing the "stroke_color" parameter.
- * @fn Color Stroke::get_width()
- * Accessing the "stroke_width" parameter.
+ * Клас Stroke.
+ * Класът Stroke представлява подчертаващата линия на всеки обект(Shape).
+ * Stroke може да има цвят и широчина на щриха.
  */
 
 class Stroke {
 private:
-    Color stroke_color;
-    double stroke_width;
+    Color stroke_color; /**< Цвят на подчертаващата линия. */
+    double stroke_width; /**< Ширина на щриха на подчертаващата линия. */
 public:
+
+    /**
+     * Конструктор за класа Stroke. 
+     * Конструкторът приема променливи, от които е изградена една подчертаваща линия.
+     * Stroke имат цвят с който се изобразяват около фигурата, 
+     * и широчина на линията.
+     */
     Stroke(Color _stroke_color = Transperant, double _stroke_width = 0) : stroke_color(_stroke_color), stroke_width(_stroke_width) {}
 
+    /** \return Дава цвета на подчертаващата линия. */
     Color get_color() const { return stroke_color; };
+    /** \return Дава ширината на подчертаващата линия. */
     double get_width() const { return stroke_width; };
 };
 

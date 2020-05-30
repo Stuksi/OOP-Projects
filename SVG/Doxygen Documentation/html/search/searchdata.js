@@ -1,9 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "cefghloprstw",
-  1: "cflrs",
-  2: "cefghopstw",
-  3: "s"
+  0: "bcefghloprstwxy",
+  1: "cflprs",
+  2: "cefghloprstw",
+  3: "bchrstwxy",
+  4: "bs"
 };
 
 var indexSectionNames =
@@ -11,7 +12,8 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "functions",
-  3: "pages"
+  3: "variables",
+  4: "pages"
 };
 
 var indexSectionLabels =
@@ -19,6 +21,7 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Functions",
-  3: "Pages"
+  3: "Variables",
+  4: "Pages"
 };
 

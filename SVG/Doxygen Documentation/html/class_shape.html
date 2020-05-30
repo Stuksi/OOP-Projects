@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SVG Documentation: Shape Class Reference</title>
+<title>Scalable Vector Graphics: Shape Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SVG Documentation
+   <div id="projectname">Scalable Vector Graphics
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -110,55 +110,305 @@ Inheritance diagram for Shape:</div>
   <map id="Shape_map" name="Shape_map">
 <area href="class_circle.html" alt="Circle" shape="rect" coords="0,56,68,80"/>
 <area href="class_line.html" alt="Line" shape="rect" coords="78,56,146,80"/>
-<area href="class_rectangle.html" alt="Rectangle" shape="rect" coords="156,56,224,80"/>
+<area href="class_polygon.html" alt="Polygon" shape="rect" coords="156,56,224,80"/>
+<area href="class_rectangle.html" alt="Rectangle" shape="rect" coords="234,56,302,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa23638d98c7ede6f773e2fe9a341b7c8"><td class="memItemLeft" align="right" valign="top"><a id="aa23638d98c7ede6f773e2fe9a341b7c8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Shape</b> (Color _color, Color _stroke_color=Transperant, double _stroke_width=0)</td></tr>
+<tr class="memitem:aa23638d98c7ede6f773e2fe9a341b7c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#aa23638d98c7ede6f773e2fe9a341b7c8">Shape</a> (Color _color, Color _stroke_color=Transperant, double _stroke_width=0)</td></tr>
 <tr class="separator:aa23638d98c7ede6f773e2fe9a341b7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ca8deca4019d7eed1619a3610700e1"><td class="memItemLeft" align="right" valign="top"><a id="a95ca8deca4019d7eed1619a3610700e1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()=0</td></tr>
+<tr class="memitem:a95ca8deca4019d7eed1619a3610700e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a95ca8deca4019d7eed1619a3610700e1">print</a> ()=0</td></tr>
 <tr class="separator:a95ca8deca4019d7eed1619a3610700e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77cd52b168c73ee02e21d4033315cfe"><td class="memItemLeft" align="right" valign="top"><a id="ac77cd52b168c73ee02e21d4033315cfe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>translate</b> (double, double)=0</td></tr>
+<tr class="memitem:ac77cd52b168c73ee02e21d4033315cfe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#ac77cd52b168c73ee02e21d4033315cfe">translate</a> (double, double)=0</td></tr>
 <tr class="separator:ac77cd52b168c73ee02e21d4033315cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c5578041093b36cdc06408c48df2678"><td class="memItemLeft" align="right" valign="top"><a id="a8c5578041093b36cdc06408c48df2678"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>within</b> (const <a class="el" href="class_rectangle.html">Rectangle</a> &amp;)=0</td></tr>
+<tr class="memitem:a8c5578041093b36cdc06408c48df2678"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a8c5578041093b36cdc06408c48df2678">within</a> (const <a class="el" href="class_rectangle.html">Rectangle</a> &amp;)=0</td></tr>
 <tr class="separator:a8c5578041093b36cdc06408c48df2678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23900588dfa834a89657d97514969aad"><td class="memItemLeft" align="right" valign="top"><a id="a23900588dfa834a89657d97514969aad"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>within</b> (const <a class="el" href="class_circle.html">Circle</a> &amp;)=0</td></tr>
+<tr class="memitem:a23900588dfa834a89657d97514969aad"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a23900588dfa834a89657d97514969aad">within</a> (const <a class="el" href="class_circle.html">Circle</a> &amp;)=0</td></tr>
 <tr class="separator:a23900588dfa834a89657d97514969aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68c68bce6e74a31ebf50748550f4dcbc"><td class="memItemLeft" align="right" valign="top"><a id="a68c68bce6e74a31ebf50748550f4dcbc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (std::ostream &amp;)=0</td></tr>
+<tr class="memitem:a68c68bce6e74a31ebf50748550f4dcbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a68c68bce6e74a31ebf50748550f4dcbc">write</a> (std::ostream &amp;)=0</td></tr>
 <tr class="separator:a68c68bce6e74a31ebf50748550f4dcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555866c38c431b0bdb60548027230f4d"><td class="memItemLeft" align="right" valign="top"><a id="a555866c38c431b0bdb60548027230f4d"></a>
-Color&#160;</td><td class="memItemRight" valign="bottom"><b>get_color</b> () const</td></tr>
+<tr class="memitem:a555866c38c431b0bdb60548027230f4d"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a555866c38c431b0bdb60548027230f4d">get_color</a> () const</td></tr>
 <tr class="separator:a555866c38c431b0bdb60548027230f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aded2bc61d9d283c659228508d8f5f9f5"><td class="memItemLeft" align="right" valign="top"><a id="aded2bc61d9d283c659228508d8f5f9f5"></a>
-<a class="el" href="class_stroke.html">Stroke</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stroke</b></td></tr>
+<tr class="memitem:aded2bc61d9d283c659228508d8f5f9f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_stroke.html">Stroke</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#aded2bc61d9d283c659228508d8f5f9f5">stroke</a></td></tr>
 <tr class="separator:aded2bc61d9d283c659228508d8f5f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac56e2bf5eb24cf37b6e08c671501566b"><td class="memItemLeft" align="right" valign="top"><a id="ac56e2bf5eb24cf37b6e08c671501566b"></a>
-Color&#160;</td><td class="memItemRight" valign="bottom"><b>color</b></td></tr>
+<tr class="memitem:ac56e2bf5eb24cf37b6e08c671501566b"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#ac56e2bf5eb24cf37b6e08c671501566b">color</a></td></tr>
 <tr class="separator:ac56e2bf5eb24cf37b6e08c671501566b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Pure virtual class, base class. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>Represents the color/filling of the shape. </td></tr>
-    <tr><td class="paramname">stroke</td><td>Represents the stroke object over the shape. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div></div><!-- contents -->
+<div class="textblock"><p>Клас <a class="el" href="class_shape.html">Shape</a>. Класът <a class="el" href="class_shape.html">Shape</a> е изцяло виртуален клас, използва се за да може да се определят различните фигури, че са от този вид, както и да може да се съхраняват заедно. <a class="el" href="class_shape.html">Shape</a> съдържа цвят на дадената фигура, както и подчертаваща линия (<a class="el" href="class_stroke.html">Stroke</a>). Наследниците на класа имат изискване за поддържането на виртуалните методи на този клас. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa23638d98c7ede6f773e2fe9a341b7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23638d98c7ede6f773e2fe9a341b7c8">&#9670;&nbsp;</a></span>Shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Shape::Shape </td>
+          <td>(</td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>_color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>_stroke_color</em> = <code>Transperant</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_stroke_width</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Конструктор за класа <a class="el" href="class_shape.html">Shape</a>. Конструкторът приема променливи, които се поддържат от всяка фигура от SVG. Наследниците на <a class="el" href="class_shape.html">Shape</a>, имат цвят с който се изобразяват в равнината, и подчертаваща линия, която е също с цвят и широчина на щриха. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a555866c38c431b0bdb60548027230f4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555866c38c431b0bdb60548027230f4d">&#9670;&nbsp;</a></span>get_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Shape::get_color </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Дава цвета на фигурата. </dd></dl>
+
+</div>
+</div>
+<a id="a95ca8deca4019d7eed1619a3610700e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ca8deca4019d7eed1619a3610700e1">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Shape::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Метода се използва за извеждане на информация за обекта наследник в конзолата. </p>
+
+<p>Implemented in <a class="el" href="class_rectangle.html#abe632920fce778141264fcd896052d11">Rectangle</a>, <a class="el" href="class_line.html#af45d136b44f3919ff3e7c050b6fdc041">Line</a>, <a class="el" href="class_polygon.html#a60830487fc3c6b815aa577e9dd758b51">Polygon</a>, and <a class="el" href="class_circle.html#a8e1b2afd696611b697691ed8ae897000">Circle</a>.</p>
+
+</div>
+</div>
+<a id="ac77cd52b168c73ee02e21d4033315cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77cd52b168c73ee02e21d4033315cfe">&#9670;&nbsp;</a></span>translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Shape::translate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Променя разположението на обекта наследник в равнината по подадено изместване по ординатата и абцисата. </p>
+
+<p>Implemented in <a class="el" href="class_rectangle.html#a84bb25950798e189a8d2a1f28a60a270">Rectangle</a>, <a class="el" href="class_line.html#a42e8f9719e9792f4df584341822f5fb3">Line</a>, <a class="el" href="class_polygon.html#a2004afcd96c3b6b1e4f6cb4eafe50faa">Polygon</a>, and <a class="el" href="class_circle.html#a77c4d50b89023412c735c2f19182e475">Circle</a>.</p>
+
+</div>
+</div>
+<a id="a23900588dfa834a89657d97514969aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23900588dfa834a89657d97514969aad">&#9670;&nbsp;</a></span>within() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Shape::within </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_circle.html">Circle</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Проверява дали дадения обект наследник се намира изцяло в друг обект <a class="el" href="class_circle.html">Circle</a> с дадени параметри. </p>
+
+<p>Implemented in <a class="el" href="class_rectangle.html#a93d786a080c4fc1e3c35f88369c9cce8">Rectangle</a>, <a class="el" href="class_line.html#aa5c43ecb2819ca3da0043ead763f0985">Line</a>, <a class="el" href="class_polygon.html#a7d6a6981c38b2995e6c51c9a9d54a499">Polygon</a>, and <a class="el" href="class_circle.html#a0f9cca26b853535b1d8ca66dd5363bc8">Circle</a>.</p>
+
+</div>
+</div>
+<a id="a8c5578041093b36cdc06408c48df2678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5578041093b36cdc06408c48df2678">&#9670;&nbsp;</a></span>within() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Shape::within </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_rectangle.html">Rectangle</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Проверява дали дадения обект наследник се намира изцяло в друг обект <a class="el" href="class_rectangle.html">Rectangle</a> с дадени параметри. </p>
+
+<p>Implemented in <a class="el" href="class_rectangle.html#a34803112d958ea9351063694a5e8eeda">Rectangle</a>, <a class="el" href="class_line.html#acd3aa431adbb00da5f8cc19c6d6816cf">Line</a>, <a class="el" href="class_polygon.html#a3eaaff27c70a7eaf18935e4d40a42680">Polygon</a>, and <a class="el" href="class_circle.html#aa2a08bf96b70e6e5040acdc4ddbb77f0">Circle</a>.</p>
+
+</div>
+</div>
+<a id="a68c68bce6e74a31ebf50748550f4dcbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c68bce6e74a31ebf50748550f4dcbc">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Shape::write </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Метода се използва за записване на информацията на обекта наследник във файл. </p>
+
+<p>Implemented in <a class="el" href="class_rectangle.html#a4ccfdbd63d953c9f626f50aa60bd5a77">Rectangle</a>, <a class="el" href="class_line.html#aac9315042b920a14cc87e1420b12a187">Line</a>, <a class="el" href="class_polygon.html#a9332acfbf6c303d2c8d3b24cad05af7b">Polygon</a>, and <a class="el" href="class_circle.html#a545ea69c6b0a4055fe311a98c54fcc2e">Circle</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac56e2bf5eb24cf37b6e08c671501566b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac56e2bf5eb24cf37b6e08c671501566b">&#9670;&nbsp;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Shape::color</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Цвят на фигурата. </p>
+
+</div>
+</div>
+<a id="aded2bc61d9d283c659228508d8f5f9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded2bc61d9d283c659228508d8f5f9f5">&#9670;&nbsp;</a></span>stroke</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_stroke.html">Stroke</a> Shape::stroke</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Подчертаваща линия на фигурата. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

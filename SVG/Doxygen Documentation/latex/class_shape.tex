@@ -13,46 +13,117 @@ Inheritance diagram for Shape\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_shape_aa23638d98c7ede6f773e2fe9a341b7c8}\label{class_shape_aa23638d98c7ede6f773e2fe9a341b7c8}} 
-{\bfseries Shape} (Color \+\_\+color, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
+\mbox{\hyperlink{class_shape_aa23638d98c7ede6f773e2fe9a341b7c8}{Shape}} (Color \+\_\+color, Color \+\_\+stroke\+\_\+color=Transperant, double \+\_\+stroke\+\_\+width=0)
 \item 
-\mbox{\Hypertarget{class_shape_a95ca8deca4019d7eed1619a3610700e1}\label{class_shape_a95ca8deca4019d7eed1619a3610700e1}} 
-virtual void {\bfseries print} ()=0
+virtual void \mbox{\hyperlink{class_shape_a95ca8deca4019d7eed1619a3610700e1}{print}} ()=0
 \item 
-\mbox{\Hypertarget{class_shape_ac77cd52b168c73ee02e21d4033315cfe}\label{class_shape_ac77cd52b168c73ee02e21d4033315cfe}} 
-virtual void {\bfseries translate} (double, double)=0
+virtual void \mbox{\hyperlink{class_shape_ac77cd52b168c73ee02e21d4033315cfe}{translate}} (double, double)=0
 \item 
-\mbox{\Hypertarget{class_shape_a8c5578041093b36cdc06408c48df2678}\label{class_shape_a8c5578041093b36cdc06408c48df2678}} 
-virtual bool {\bfseries within} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&)=0
+virtual bool \mbox{\hyperlink{class_shape_a8c5578041093b36cdc06408c48df2678}{within}} (const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&)=0
 \item 
-\mbox{\Hypertarget{class_shape_a23900588dfa834a89657d97514969aad}\label{class_shape_a23900588dfa834a89657d97514969aad}} 
-virtual bool {\bfseries within} (const \mbox{\hyperlink{class_circle}{Circle}} \&)=0
+virtual bool \mbox{\hyperlink{class_shape_a23900588dfa834a89657d97514969aad}{within}} (const \mbox{\hyperlink{class_circle}{Circle}} \&)=0
 \item 
-\mbox{\Hypertarget{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}\label{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}} 
-virtual void {\bfseries write} (std\+::ostream \&)=0
+virtual void \mbox{\hyperlink{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}{write}} (std\+::ostream \&)=0
 \item 
-\mbox{\Hypertarget{class_shape_a555866c38c431b0bdb60548027230f4d}\label{class_shape_a555866c38c431b0bdb60548027230f4d}} 
-Color {\bfseries get\+\_\+color} () const
+Color \mbox{\hyperlink{class_shape_a555866c38c431b0bdb60548027230f4d}{get\+\_\+color}} () const
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_shape_aded2bc61d9d283c659228508d8f5f9f5}\label{class_shape_aded2bc61d9d283c659228508d8f5f9f5}} 
-\mbox{\hyperlink{class_stroke}{Stroke}} {\bfseries stroke}
+\mbox{\hyperlink{class_stroke}{Stroke}} \mbox{\hyperlink{class_shape_aded2bc61d9d283c659228508d8f5f9f5}{stroke}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_shape_ac56e2bf5eb24cf37b6e08c671501566b}\label{class_shape_ac56e2bf5eb24cf37b6e08c671501566b}} 
-Color {\bfseries color}
+Color \mbox{\hyperlink{class_shape_ac56e2bf5eb24cf37b6e08c671501566b}{color}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Pure virtual class, base class. 
-\begin{DoxyParams}{Parameters}
-{\em color} & Represents the color/filling of the shape. \\
-\hline
-{\em stroke} & Represents the stroke object over the shape. \\
-\hline
-\end{DoxyParams}
+Клас \mbox{\hyperlink{class_shape}{Shape}}. Класът \mbox{\hyperlink{class_shape}{Shape}} е изцяло виртуален клас, използва се за да може да се определят различните фигури, че са от този вид, както и да може да се съхраняват заедно. \mbox{\hyperlink{class_shape}{Shape}} съдържа цвят на дадената фигура, както и подчертаваща линия (\mbox{\hyperlink{class_stroke}{Stroke}}). Наследниците на класа имат изискване за поддържането на виртуалните методи на този клас. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_shape_aa23638d98c7ede6f773e2fe9a341b7c8}\label{class_shape_aa23638d98c7ede6f773e2fe9a341b7c8}} 
+\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}}
+{\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}\item[{Color}]{\+\_\+color,  }\item[{Color}]{\+\_\+stroke\+\_\+color = {\ttfamily Transperant},  }\item[{double}]{\+\_\+stroke\+\_\+width = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Конструктор за класа \mbox{\hyperlink{class_shape}{Shape}}. Конструкторът приема променливи, които се поддържат от всяка фигура от S\+VG. Наследниците на \mbox{\hyperlink{class_shape}{Shape}}, имат цвят с който се изобразяват в равнината, и подчертаваща линия, която е също с цвят и широчина на щриха. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shape_a555866c38c431b0bdb60548027230f4d}\label{class_shape_a555866c38c431b0bdb60548027230f4d}} 
+\index{Shape@{Shape}!get\_color@{get\_color}}
+\index{get\_color@{get\_color}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{get\_color()}{get\_color()}}
+{\footnotesize\ttfamily Color Shape\+::get\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+Дава цвета на фигурата. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shape_a95ca8deca4019d7eed1619a3610700e1}\label{class_shape_a95ca8deca4019d7eed1619a3610700e1}} 
+\index{Shape@{Shape}!print@{print}}
+\index{print@{print}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Shape\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Метода се използва за извеждане на информация за обекта наследник в конзолата. 
+
+Implemented in \mbox{\hyperlink{class_rectangle_abe632920fce778141264fcd896052d11}{Rectangle}}, \mbox{\hyperlink{class_line_af45d136b44f3919ff3e7c050b6fdc041}{Line}}, \mbox{\hyperlink{class_polygon_a60830487fc3c6b815aa577e9dd758b51}{Polygon}}, and \mbox{\hyperlink{class_circle_a8e1b2afd696611b697691ed8ae897000}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_ac77cd52b168c73ee02e21d4033315cfe}\label{class_shape_ac77cd52b168c73ee02e21d4033315cfe}} 
+\index{Shape@{Shape}!translate@{translate}}
+\index{translate@{translate}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily virtual void Shape\+::translate (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Променя разположението на обекта наследник в равнината по подадено изместване по ординатата и абцисата. 
+
+Implemented in \mbox{\hyperlink{class_rectangle_a84bb25950798e189a8d2a1f28a60a270}{Rectangle}}, \mbox{\hyperlink{class_line_a42e8f9719e9792f4df584341822f5fb3}{Line}}, \mbox{\hyperlink{class_polygon_a2004afcd96c3b6b1e4f6cb4eafe50faa}{Polygon}}, and \mbox{\hyperlink{class_circle_a77c4d50b89023412c735c2f19182e475}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a23900588dfa834a89657d97514969aad}\label{class_shape_a23900588dfa834a89657d97514969aad}} 
+\index{Shape@{Shape}!within@{within}}
+\index{within@{within}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool Shape\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_circle}{Circle}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Проверява дали дадения обект наследник се намира изцяло в друг обект \mbox{\hyperlink{class_circle}{Circle}} с дадени параметри. 
+
+Implemented in \mbox{\hyperlink{class_rectangle_a93d786a080c4fc1e3c35f88369c9cce8}{Rectangle}}, \mbox{\hyperlink{class_line_aa5c43ecb2819ca3da0043ead763f0985}{Line}}, \mbox{\hyperlink{class_polygon_a7d6a6981c38b2995e6c51c9a9d54a499}{Polygon}}, and \mbox{\hyperlink{class_circle_a0f9cca26b853535b1d8ca66dd5363bc8}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a8c5578041093b36cdc06408c48df2678}\label{class_shape_a8c5578041093b36cdc06408c48df2678}} 
+\index{Shape@{Shape}!within@{within}}
+\index{within@{within}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{within()}{within()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool Shape\+::within (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rectangle}{Rectangle}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Проверява дали дадения обект наследник се намира изцяло в друг обект \mbox{\hyperlink{class_rectangle}{Rectangle}} с дадени параметри. 
+
+Implemented in \mbox{\hyperlink{class_rectangle_a34803112d958ea9351063694a5e8eeda}{Rectangle}}, \mbox{\hyperlink{class_line_acd3aa431adbb00da5f8cc19c6d6816cf}{Line}}, \mbox{\hyperlink{class_polygon_a3eaaff27c70a7eaf18935e4d40a42680}{Polygon}}, and \mbox{\hyperlink{class_circle_aa2a08bf96b70e6e5040acdc4ddbb77f0}{Circle}}.
+
+\mbox{\Hypertarget{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}\label{class_shape_a68c68bce6e74a31ebf50748550f4dcbc}} 
+\index{Shape@{Shape}!write@{write}}
+\index{write@{write}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily virtual void Shape\+::write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Метода се използва за записване на информацията на обекта наследник във файл. 
+
+Implemented in \mbox{\hyperlink{class_rectangle_a4ccfdbd63d953c9f626f50aa60bd5a77}{Rectangle}}, \mbox{\hyperlink{class_line_aac9315042b920a14cc87e1420b12a187}{Line}}, \mbox{\hyperlink{class_polygon_a9332acfbf6c303d2c8d3b24cad05af7b}{Polygon}}, and \mbox{\hyperlink{class_circle_a545ea69c6b0a4055fe311a98c54fcc2e}{Circle}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_shape_ac56e2bf5eb24cf37b6e08c671501566b}\label{class_shape_ac56e2bf5eb24cf37b6e08c671501566b}} 
+\index{Shape@{Shape}!color@{color}}
+\index{color@{color}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily Color Shape\+::color\hspace{0.3cm}{\ttfamily [private]}}
+
+Цвят на фигурата. \mbox{\Hypertarget{class_shape_aded2bc61d9d283c659228508d8f5f9f5}\label{class_shape_aded2bc61d9d283c659228508d8f5f9f5}} 
+\index{Shape@{Shape}!stroke@{stroke}}
+\index{stroke@{stroke}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{stroke}{stroke}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stroke}{Stroke}} Shape\+::stroke\hspace{0.3cm}{\ttfamily [protected]}}
+
+Подчертаваща линия на фигурата. 

@@ -5,6 +5,7 @@ var hierarchy =
     [ "Shape", "class_shape.html", [
       [ "Circle", "class_circle.html", null ],
       [ "Line", "class_line.html", null ],
+      [ "Polygon", "class_polygon.html", null ],
       [ "Rectangle", "class_rectangle.html", null ]
     ] ],
     [ "Stroke", "class_stroke.html", null ]
