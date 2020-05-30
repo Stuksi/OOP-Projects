@@ -1,0 +1,100 @@
+\hypertarget{class_hall}{}\doxysection{Hall Class Reference}
+\label{class_hall}\index{Hall@{Hall}}
+
+
+{\ttfamily \#include $<$Hall.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hall_a122ed8085be305339c89cadb3e360b86}{Hall}} ()
+\item 
+\mbox{\hyperlink{class_hall_ab07bc5cee723273d56c27fabb6a17f7a}{Hall}} (int)
+\item 
+void \mbox{\hyperlink{class_hall_a7f38454408ded56ad14d281f6a8e8cd6}{print\+\_\+hall}} ()
+\item 
+bool \mbox{\hyperlink{class_hall_a995578b2a24e8239f8c038faf389798c}{set\+\_\+seat}} (int, int, int)
+\item 
+void \mbox{\hyperlink{class_hall_a54a4d5b9269b3b4c47b5deff9b9b1034}{report}} (int, std\+::ostream \&)
+\item 
+bool \mbox{\hyperlink{class_hall_af5533f7b5878cfdddbdb3bff330d6009}{find\+\_\+seat}} (int)
+\item 
+int \mbox{\hyperlink{class_hall_aa324f38f2cff69817bc01cfffd90fc02}{get\+\_\+id}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_hall_a2b2d0722edb7f1bcf029419fbf183979}{hall\+\_\+seats}} \mbox{[}hall\+\_\+rows\mbox{]}\mbox{[}hall\+\_\+cols\mbox{]}
+\item 
+int \mbox{\hyperlink{class_hall_a5d7df5a390f4dadc26c2dcdf4aa58f37}{id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_hall}{Hall}}. Класът \mbox{\hyperlink{class_hall}{Hall}} представлява обект съдържащ информация за места в прожекционна зала, както и номер за индентификация. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hall_a122ed8085be305339c89cadb3e360b86}\label{class_hall_a122ed8085be305339c89cadb3e360b86}} 
+\index{Hall@{Hall}!Hall@{Hall}}
+\index{Hall@{Hall}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{Hall()}{Hall()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Hall\+::\+Hall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Създава празна зала. \mbox{\Hypertarget{class_hall_ab07bc5cee723273d56c27fabb6a17f7a}\label{class_hall_ab07bc5cee723273d56c27fabb6a17f7a}} 
+\index{Hall@{Hall}!Hall@{Hall}}
+\index{Hall@{Hall}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{Hall()}{Hall()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Hall\+::\+Hall (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+Създава празна зала, но се задава и номер на залата. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hall_af5533f7b5878cfdddbdb3bff330d6009}\label{class_hall_af5533f7b5878cfdddbdb3bff330d6009}} 
+\index{Hall@{Hall}!find\_seat@{find\_seat}}
+\index{find\_seat@{find\_seat}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{find\_seat()}{find\_seat()}}
+{\footnotesize\ttfamily bool Hall\+::find\+\_\+seat (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+Проверява дали в залата съществува място с което да съвпада код от билет. \mbox{\Hypertarget{class_hall_aa324f38f2cff69817bc01cfffd90fc02}\label{class_hall_aa324f38f2cff69817bc01cfffd90fc02}} 
+\index{Hall@{Hall}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily int Hall\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Дава номера на залата. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hall_a7f38454408ded56ad14d281f6a8e8cd6}\label{class_hall_a7f38454408ded56ad14d281f6a8e8cd6}} 
+\index{Hall@{Hall}!print\_hall@{print\_hall}}
+\index{print\_hall@{print\_hall}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{print\_hall()}{print\_hall()}}
+{\footnotesize\ttfamily void Hall\+::print\+\_\+hall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Извежда информация за местата в залата. \mbox{\Hypertarget{class_hall_a54a4d5b9269b3b4c47b5deff9b9b1034}\label{class_hall_a54a4d5b9269b3b4c47b5deff9b9b1034}} 
+\index{Hall@{Hall}!report@{report}}
+\index{report@{report}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily void Hall\+::report (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{std\+::ostream \&}]{ }\end{DoxyParamCaption})}
+
+Извежда във файл информация за местата в залата(закупени места, свободни места, запазени места). \mbox{\Hypertarget{class_hall_a995578b2a24e8239f8c038faf389798c}\label{class_hall_a995578b2a24e8239f8c038faf389798c}} 
+\index{Hall@{Hall}!set\_seat@{set\_seat}}
+\index{set\_seat@{set\_seat}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{set\_seat()}{set\_seat()}}
+{\footnotesize\ttfamily bool Hall\+::set\+\_\+seat (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+Променя състоянието на място в залата. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_hall_a2b2d0722edb7f1bcf029419fbf183979}\label{class_hall_a2b2d0722edb7f1bcf029419fbf183979}} 
+\index{Hall@{Hall}!hall\_seats@{hall\_seats}}
+\index{hall\_seats@{hall\_seats}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{hall\_seats}{hall\_seats}}
+{\footnotesize\ttfamily int Hall\+::hall\+\_\+seats\mbox{[}hall\+\_\+rows\mbox{]}\mbox{[}hall\+\_\+cols\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Местата в залата. \mbox{\Hypertarget{class_hall_a5d7df5a390f4dadc26c2dcdf4aa58f37}\label{class_hall_a5d7df5a390f4dadc26c2dcdf4aa58f37}} 
+\index{Hall@{Hall}!id@{id}}
+\index{id@{id}!Hall@{Hall}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Hall\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+Номер на зала. 

@@ -1,0 +1,123 @@
+\hypertarget{class_c_m_d}{}\doxysection{C\+MD Class Reference}
+\label{class_c_m_d}\index{CMD@{CMD}}
+
+
+{\ttfamily \#include $<$Command\+\_\+\+Prompt.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_m_d_aea931ba3d165c2da508d209db8ae8216}{open}} (std\+::ifstream \&, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&, std\+::string \&)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a14f6f982d089ab3345cd680816cc03c7}{close}} (std\+::ifstream \&, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&, std\+::string \&)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_af0db0e0bf7c8b17ac1cfd3e113027431}{save}} (std\+::ifstream \&, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&, std\+::string)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a167f14c2bdb9923aa15f2f4e442555f5}{saveas}} (std\+::ifstream \&, std\+::vector$<$ std\+::string $>$, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_acfcd4714aebc2847cc10a147b0370e20}{help}} ()
+\item 
+static void \mbox{\hyperlink{class_c_m_d_aaa45d3a0b71ea8f242c08b854d5ddaf9}{add\+\_\+event}} (std\+::vector$<$ std\+::string $>$, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a1e14ae97ba86884e6e061948f6a263fa}{free\+\_\+seats}} (std\+::vector$<$ std\+::string $>$, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_abe8683ddd87ad02e3f38874419ac5589}{access\+\_\+seats}} (std\+::vector$<$ std\+::string $>$, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&, std\+::vector$<$ int $>$ \&, int)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a11301e052d83dcf5a6cbd91347cafb33}{bookings}} (std\+::vector$<$ std\+::string $>$, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_aa2f34b21e1e4bf46fbf4b3672e44c44a}{check}} (std\+::vector$<$ std\+::string $>$, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&, std\+::vector$<$ int $>$ \&)
+\item 
+static void \mbox{\hyperlink{class_c_m_d_a39ddd11fb0740cdfe94af07fb41806dc}{report}} (std\+::vector$<$ std\+::string $>$, std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_c_m_d_a9a55e91dc2b7d4b751abb16b8eb186de}{exists}} (std\+::string)
+\item 
+static bool \mbox{\hyperlink{class_c_m_d_ab43340d7f9464417ab2c4d9db06c0651}{empty\+\_\+file}} (std\+::string)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_c_m_d}{C\+MD}}. Класът \mbox{\hyperlink{class_c_m_d}{C\+MD}} е помощен клас, който се използва за извикване и обработка на различните функции, които програмата трябва да поддържа с цел да е отделно от програмата която прочита входа от конзолата. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_m_d_abe8683ddd87ad02e3f38874419ac5589}\label{class_c_m_d_abe8683ddd87ad02e3f38874419ac5589}} 
+\index{CMD@{CMD}!access\_seats@{access\_seats}}
+\index{access\_seats@{access\_seats}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{access\_seats()}{access\_seats()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::access\+\_\+seats (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{,  }\item[{std\+::vector$<$ int $>$ \&}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Позволява да се закупи, запази или освободи място. \mbox{\Hypertarget{class_c_m_d_aaa45d3a0b71ea8f242c08b854d5ddaf9}\label{class_c_m_d_aaa45d3a0b71ea8f242c08b854d5ddaf9}} 
+\index{CMD@{CMD}!add\_event@{add\_event}}
+\index{add\_event@{add\_event}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{add\_event()}{add\_event()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::add\+\_\+event (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Добавя нова прожекция в системата. \mbox{\Hypertarget{class_c_m_d_a11301e052d83dcf5a6cbd91347cafb33}\label{class_c_m_d_a11301e052d83dcf5a6cbd91347cafb33}} 
+\index{CMD@{CMD}!bookings@{bookings}}
+\index{bookings@{bookings}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{bookings()}{bookings()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::bookings (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Извежда във файл информация за запазените места на посочена прожекция/и. \mbox{\Hypertarget{class_c_m_d_aa2f34b21e1e4bf46fbf4b3672e44c44a}\label{class_c_m_d_aa2f34b21e1e4bf46fbf4b3672e44c44a}} 
+\index{CMD@{CMD}!check@{check}}
+\index{check@{check}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::check (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{,  }\item[{std\+::vector$<$ int $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Проверява по даден код на билет дали съответства място в зала. \mbox{\Hypertarget{class_c_m_d_a14f6f982d089ab3345cd680816cc03c7}\label{class_c_m_d_a14f6f982d089ab3345cd680816cc03c7}} 
+\index{CMD@{CMD}!close@{close}}
+\index{close@{close}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::close (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{,  }\item[{std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Затваря отворения файл и изчиства информацията му от системата. \mbox{\Hypertarget{class_c_m_d_ab43340d7f9464417ab2c4d9db06c0651}\label{class_c_m_d_ab43340d7f9464417ab2c4d9db06c0651}} 
+\index{CMD@{CMD}!empty\_file@{empty\_file}}
+\index{empty\_file@{empty\_file}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{empty\_file()}{empty\_file()}}
+{\footnotesize\ttfamily static bool C\+M\+D\+::empty\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Проверява дали даден файл е празен по името на файла. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_a9a55e91dc2b7d4b751abb16b8eb186de}\label{class_c_m_d_a9a55e91dc2b7d4b751abb16b8eb186de}} 
+\index{CMD@{CMD}!exists@{exists}}
+\index{exists@{exists}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily static bool C\+M\+D\+::exists (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Проверява дали даден файл съществува по името на файла. (Stack Overflow) \mbox{\Hypertarget{class_c_m_d_a1e14ae97ba86884e6e061948f6a263fa}\label{class_c_m_d_a1e14ae97ba86884e6e061948f6a263fa}} 
+\index{CMD@{CMD}!free\_seats@{free\_seats}}
+\index{free\_seats@{free\_seats}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{free\_seats()}{free\_seats()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::free\+\_\+seats (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Извежда информация за свободните места на дадена прожекция в терминала. \mbox{\Hypertarget{class_c_m_d_acfcd4714aebc2847cc10a147b0370e20}\label{class_c_m_d_acfcd4714aebc2847cc10a147b0370e20}} 
+\index{CMD@{CMD}!help@{help}}
+\index{help@{help}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Извежда информация за всички поддържани от програмата команди. \mbox{\Hypertarget{class_c_m_d_aea931ba3d165c2da508d209db8ae8216}\label{class_c_m_d_aea931ba3d165c2da508d209db8ae8216}} 
+\index{CMD@{CMD}!open@{open}}
+\index{open@{open}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::open (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{,  }\item[{std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Отваря даден файл и записва информацията за фигурите от него в системата. \mbox{\Hypertarget{class_c_m_d_a39ddd11fb0740cdfe94af07fb41806dc}\label{class_c_m_d_a39ddd11fb0740cdfe94af07fb41806dc}} 
+\index{CMD@{CMD}!report@{report}}
+\index{report@{report}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::report (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Извежда във файл информация за закупените места на посочена прожекция/и. \mbox{\Hypertarget{class_c_m_d_af0db0e0bf7c8b17ac1cfd3e113027431}\label{class_c_m_d_af0db0e0bf7c8b17ac1cfd3e113027431}} 
+\index{CMD@{CMD}!save@{save}}
+\index{save@{save}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::save (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Запазва обработената от системата информация в същия файл, който е отворен. \mbox{\Hypertarget{class_c_m_d_a167f14c2bdb9923aa15f2f4e442555f5}\label{class_c_m_d_a167f14c2bdb9923aa15f2f4e442555f5}} 
+\index{CMD@{CMD}!saveas@{saveas}}
+\index{saveas@{saveas}!CMD@{CMD}}
+\doxysubsubsection{\texorpdfstring{saveas()}{saveas()}}
+{\footnotesize\ttfamily static void C\+M\+D\+::saveas (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{,  }\item[{std\+::vector$<$ std\+::string $>$}]{,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_event}{Event}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Запазва обработената от системата информация във файл посочен от потребителя по име. Ако този файл не съществува, се създава нов с това име. 

@@ -1,0 +1,125 @@
+\hypertarget{class_event}{}\doxysection{Event Class Reference}
+\label{class_event}\index{Event@{Event}}
+
+
+{\ttfamily \#include $<$Event.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_ab6ea99498359046e19d7a00222279759}{Event}} (\mbox{\hyperlink{class_date}{Date}}, \mbox{\hyperlink{class_hall}{Hall}}, std\+::string)
+\item 
+void \mbox{\hyperlink{class_event_a5a011b0feab9fa884ddee8c0e5705aa0}{print\+\_\+hall}} ()
+\item 
+void \mbox{\hyperlink{class_event_a7d24f407e54d50fd467e296b4c07d482}{update\+\_\+hall\+\_\+seat}} (int, int, int)
+\item 
+void \mbox{\hyperlink{class_event_a3f255d8c50b563b2ff4ad43c6bcff66e}{event\+\_\+report}} (int, std\+::ostream \&os)
+\item 
+void \mbox{\hyperlink{class_event_ac94f45ed71319f9044b006cf68cf5ed5}{check}} (int)
+\item 
+\mbox{\hyperlink{class_date}{Date}} \mbox{\hyperlink{class_event_aa0530f096a5244c6ea227c0190724078}{get\+\_\+date}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_event_acf7f2e864ba2d56452ad068193274e6a}{get\+\_\+name}} ()
+\item 
+\mbox{\hyperlink{class_hall}{Hall}} \mbox{\hyperlink{class_event_ae7a0d33deb53e8a3ee866a7af796afb0}{get\+\_\+hall}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_date}{Date}} \mbox{\hyperlink{class_event_ae6c765ab9ca0941a7de500de8e3ad6ba}{movie\+\_\+date}}
+\item 
+\mbox{\hyperlink{class_hall}{Hall}} \mbox{\hyperlink{class_event_a5d1ac19acf52ffb0ac54af7eb9a3c03b}{movie\+\_\+hall}}
+\item 
+std\+::string \mbox{\hyperlink{class_event_af86a9f83bb87c99ea63a0a2ca53b5094}{movie\+\_\+name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_event}{Event}}. Класът \mbox{\hyperlink{class_event}{Event}} представлява обект съдържащ дата на прожекция на даден филм, името на филма и залата в която ще се прожектира. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_event_ab6ea99498359046e19d7a00222279759}\label{class_event_ab6ea99498359046e19d7a00222279759}} 
+\index{Event@{Event}!Event@{Event}}
+\index{Event@{Event}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}}
+{\footnotesize\ttfamily Event\+::\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_date}{Date}}}]{,  }\item[{\mbox{\hyperlink{class_hall}{Hall}}}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+Конструктора инициализира обекта по подадени дата, зала и име на прожекция. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_event_ac94f45ed71319f9044b006cf68cf5ed5}\label{class_event_ac94f45ed71319f9044b006cf68cf5ed5}} 
+\index{Event@{Event}!check@{check}}
+\index{check@{check}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily void Event\+::check (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+Проверява по даден код на билет дали съответства място в залата. \mbox{\Hypertarget{class_event_a3f255d8c50b563b2ff4ad43c6bcff66e}\label{class_event_a3f255d8c50b563b2ff4ad43c6bcff66e}} 
+\index{Event@{Event}!event\_report@{event\_report}}
+\index{event\_report@{event\_report}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{event\_report()}{event\_report()}}
+{\footnotesize\ttfamily void Event\+::event\+\_\+report (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+Извежда във файл информация за прожекцията(закупени места, свободни места, запазени места). \mbox{\Hypertarget{class_event_aa0530f096a5244c6ea227c0190724078}\label{class_event_aa0530f096a5244c6ea227c0190724078}} 
+\index{Event@{Event}!get\_date@{get\_date}}
+\index{get\_date@{get\_date}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{get\_date()}{get\_date()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_date}{Date}} Event\+::get\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Дава датата на прожекцията. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_event_ae7a0d33deb53e8a3ee866a7af796afb0}\label{class_event_ae7a0d33deb53e8a3ee866a7af796afb0}} 
+\index{Event@{Event}!get\_hall@{get\_hall}}
+\index{get\_hall@{get\_hall}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{get\_hall()}{get\_hall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hall}{Hall}} Event\+::get\+\_\+hall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Дава залата на прожекцията. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_event_acf7f2e864ba2d56452ad068193274e6a}\label{class_event_acf7f2e864ba2d56452ad068193274e6a}} 
+\index{Event@{Event}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string Event\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Дава името на прожекцията. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_event_a5a011b0feab9fa884ddee8c0e5705aa0}\label{class_event_a5a011b0feab9fa884ddee8c0e5705aa0}} 
+\index{Event@{Event}!print\_hall@{print\_hall}}
+\index{print\_hall@{print\_hall}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{print\_hall()}{print\_hall()}}
+{\footnotesize\ttfamily void Event\+::print\+\_\+hall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Извежда на конзолата залата и показва информация за местата. \mbox{\Hypertarget{class_event_a7d24f407e54d50fd467e296b4c07d482}\label{class_event_a7d24f407e54d50fd467e296b4c07d482}} 
+\index{Event@{Event}!update\_hall\_seat@{update\_hall\_seat}}
+\index{update\_hall\_seat@{update\_hall\_seat}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{update\_hall\_seat()}{update\_hall\_seat()}}
+{\footnotesize\ttfamily void Event\+::update\+\_\+hall\+\_\+seat (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+Променя състоянието на дадено място в залата. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_event_ae6c765ab9ca0941a7de500de8e3ad6ba}\label{class_event_ae6c765ab9ca0941a7de500de8e3ad6ba}} 
+\index{Event@{Event}!movie\_date@{movie\_date}}
+\index{movie\_date@{movie\_date}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{movie\_date}{movie\_date}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_date}{Date}} Event\+::movie\+\_\+date\hspace{0.3cm}{\ttfamily [private]}}
+
+Дата на прожекцията. \mbox{\Hypertarget{class_event_a5d1ac19acf52ffb0ac54af7eb9a3c03b}\label{class_event_a5d1ac19acf52ffb0ac54af7eb9a3c03b}} 
+\index{Event@{Event}!movie\_hall@{movie\_hall}}
+\index{movie\_hall@{movie\_hall}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{movie\_hall}{movie\_hall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hall}{Hall}} Event\+::movie\+\_\+hall\hspace{0.3cm}{\ttfamily [private]}}
+
+Зала на прожекцията. \mbox{\Hypertarget{class_event_af86a9f83bb87c99ea63a0a2ca53b5094}\label{class_event_af86a9f83bb87c99ea63a0a2ca53b5094}} 
+\index{Event@{Event}!movie\_name@{movie\_name}}
+\index{movie\_name@{movie\_name}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{movie\_name}{movie\_name}}
+{\footnotesize\ttfamily std\+::string Event\+::movie\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+Име на филма. 

@@ -1,0 +1,162 @@
+\hypertarget{class_date}{}\doxysection{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}} ()
+\item 
+\mbox{\hyperlink{class_date_afa65693475fb86a2de04c8578b232201}{Date}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\item 
+\mbox{\hyperlink{class_date_af80a5016fde0d599f0a15900193fc663}{Date}} (int, int, int)
+\item 
+\mbox{\hyperlink{class_date_a7c1a8acb77b1eceb4e9b44fd0814e336}{Date}} (const std\+::string)
+\item 
+\mbox{\hyperlink{class_date}{Date}} \mbox{\hyperlink{class_date_a449df9445b4f4fac127e171ac981adb3}{operator=}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\item 
+bool \mbox{\hyperlink{class_date_a708f08422ab811b735f26855ddf7d9b1}{operator==}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\item 
+bool \mbox{\hyperlink{class_date_a016d0ec06c0f13be5fabba84a009d92a}{operator!=}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\item 
+bool \mbox{\hyperlink{class_date_a108ed54f6f260bc1eb032b558c125632}{operator$>$=}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\item 
+bool \mbox{\hyperlink{class_date_a11140a9621630e789c1580b2fa716948}{operator$<$=}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\item 
+bool \mbox{\hyperlink{class_date_a1acb75fc54b2b6532da9297bcd931db6}{operator$<$}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\item 
+bool \mbox{\hyperlink{class_date_a090a2b3965fada91c683559043af7b62}{operator$>$}} (const \mbox{\hyperlink{class_date}{Date}} \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_date_a046f9a6c54264b82b7c713d23fdba6c4}{valid}} (int, int, int)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_date_a3eeced2ed56bc95d56782b9e738db8ea}{year}}
+\item 
+int \mbox{\hyperlink{class_date_a533843e07c6ac8d19fee9b16f5336ba2}{month}}
+\item 
+int \mbox{\hyperlink{class_date_a5b192adcabf2b2871e3f0b76c1ec1601}{day}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_date_a191ee8989894d19ac4c9a71e359210a1}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_date}{Date}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_date}{Date}}. Класът \mbox{\hyperlink{class_date}{Date}} представлява обект(дата) структуриран по модела I\+SO 8601. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Конструктор задаващ нули като стойности на променливите. \mbox{\Hypertarget{class_date_afa65693475fb86a2de04c8578b232201}\label{class_date_afa65693475fb86a2de04c8578b232201}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Инициализира датата чрез стойностите на друг обект \mbox{\hyperlink{class_date}{Date}}. \mbox{\Hypertarget{class_date_af80a5016fde0d599f0a15900193fc663}\label{class_date_af80a5016fde0d599f0a15900193fc663}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+Инициализира датата чрез три числа(стойности) за година, месец и ден. \mbox{\Hypertarget{class_date_a7c1a8acb77b1eceb4e9b44fd0814e336}\label{class_date_a7c1a8acb77b1eceb4e9b44fd0814e336}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{const std\+::string}]{ }\end{DoxyParamCaption})}
+
+Инициализира датата чрез низ. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_date_a016d0ec06c0f13be5fabba84a009d92a}\label{class_date_a016d0ec06c0f13be5fabba84a009d92a}} 
+\index{Date@{Date}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Date\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Проверява дали две дати са различни. \mbox{\Hypertarget{class_date_a1acb75fc54b2b6532da9297bcd931db6}\label{class_date_a1acb75fc54b2b6532da9297bcd931db6}} 
+\index{Date@{Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Date\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Проверява дали текущата дата е по-\/напред във времето с посочената. \mbox{\Hypertarget{class_date_a11140a9621630e789c1580b2fa716948}\label{class_date_a11140a9621630e789c1580b2fa716948}} 
+\index{Date@{Date}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Date\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Проверява дали текущата дата е по-\/назад във времето или равна с посочената. \mbox{\Hypertarget{class_date_a449df9445b4f4fac127e171ac981adb3}\label{class_date_a449df9445b4f4fac127e171ac981adb3}} 
+\index{Date@{Date}!operator=@{operator=}}
+\index{operator=@{operator=}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_date}{Date}} Date\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Задава текущата дата чрез друга. \mbox{\Hypertarget{class_date_a708f08422ab811b735f26855ddf7d9b1}\label{class_date_a708f08422ab811b735f26855ddf7d9b1}} 
+\index{Date@{Date}!operator==@{operator==}}
+\index{operator==@{operator==}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Date\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Проверява дали две дати са еднакви. \mbox{\Hypertarget{class_date_a090a2b3965fada91c683559043af7b62}\label{class_date_a090a2b3965fada91c683559043af7b62}} 
+\index{Date@{Date}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Date\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Проверява дали текущата дата е по-\/назад във времето с посочената. \mbox{\Hypertarget{class_date_a108ed54f6f260bc1eb032b558c125632}\label{class_date_a108ed54f6f260bc1eb032b558c125632}} 
+\index{Date@{Date}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Date\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})}
+
+Проверява дали текущата дата е по-\/напред във времето или равна с посочената. \mbox{\Hypertarget{class_date_a046f9a6c54264b82b7c713d23fdba6c4}\label{class_date_a046f9a6c54264b82b7c713d23fdba6c4}} 
+\index{Date@{Date}!valid@{valid}}
+\index{valid@{valid}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily bool Date\+::valid (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Проверява дали дадена дата е коректна. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_date_a191ee8989894d19ac4c9a71e359210a1}\label{class_date_a191ee8989894d19ac4c9a71e359210a1}} 
+\index{Date@{Date}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{,  }\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Позволява да се извеждат обекти от тип Data. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_date_a5b192adcabf2b2871e3f0b76c1ec1601}\label{class_date_a5b192adcabf2b2871e3f0b76c1ec1601}} 
+\index{Date@{Date}!day@{day}}
+\index{day@{day}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily int Date\+::day\hspace{0.3cm}{\ttfamily [private]}}
+
+Число -\/ Ден \mbox{\Hypertarget{class_date_a533843e07c6ac8d19fee9b16f5336ba2}\label{class_date_a533843e07c6ac8d19fee9b16f5336ba2}} 
+\index{Date@{Date}!month@{month}}
+\index{month@{month}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily int Date\+::month\hspace{0.3cm}{\ttfamily [private]}}
+
+Число -\/ Месец \mbox{\Hypertarget{class_date_a3eeced2ed56bc95d56782b9e738db8ea}\label{class_date_a3eeced2ed56bc95d56782b9e738db8ea}} 
+\index{Date@{Date}!year@{year}}
+\index{year@{year}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily int Date\+::year\hspace{0.3cm}{\ttfamily [private]}}
+
+Число -\/ Година 

@@ -3,21 +3,29 @@
 
 #include <iostream>
 
-const int hall_rows = 5;
-const int hall_cols = 5;
+const int hall_rows = 5; /**< Брой на редова в залата. */
+const int hall_cols = 5; /**< Брой на колони в залата. */
+
+/**
+ * Клас Hall.
+ * Класът Hall представлява обект съдържащ информация 
+ * за места в прожекционна зала, както и номер за индентификация.
+ */
 
 class Hall {
 private:
-    int hall_seats[hall_rows][hall_cols], id;
+    int hall_seats[hall_rows][hall_cols]; /**< Местата в залата. */
+    int id; /**< Номер на зала. */
 public:
-    Hall();
-    Hall(int);
+    Hall(); /**< Създава празна зала. */
+    Hall(int); /**< Създава празна зала, но се задава и номер на залата. */
 
-    void print_hall();
-    bool set_seat(int, int, int);
-    void report(int, std::ostream&);
-    bool find_seat(int);
-    int get_id();
+    void print_hall(); /**< Извежда информация за местата в залата. */
+    bool set_seat(int, int, int); /**< Променя състоянието на място в залата. */
+    void report(int, std::ostream&); /**< Извежда във файл информация за местата в залата(закупени места, свободни места, запазени места). */
+    bool find_seat(int); /**< Проверява дали в залата съществува място с което да съвпада код от билет. */
+    /** \return Дава номера на залата. */
+    int get_id(); 
 };
 
 #endif
