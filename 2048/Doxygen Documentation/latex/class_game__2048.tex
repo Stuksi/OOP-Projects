@@ -1,0 +1,132 @@
+\hypertarget{class_game__2048}{}\doxysection{Game\+\_\+2048 Class Reference}
+\label{class_game__2048}\index{Game\_2048@{Game\_2048}}
+
+
+{\ttfamily \#include $<$2048.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game__2048_a6716d8294e43f1ee65e6aaeeea512372}{Game\+\_\+2048}} ()
+\item 
+void \mbox{\hyperlink{class_game__2048_adff2b4020bf7cb07cf7de021ad849aaf}{Start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game__2048_ae5941776363aec6e7d058e972c9057ca}{game\+\_\+over}} ()
+\item 
+bool \mbox{\hyperlink{class_game__2048_ac5fefa23f19af56cd7f09e555ea3b655}{copy\+\_\+move}} ()
+\item 
+void \mbox{\hyperlink{class_game__2048_a36c1510f8b10745a22a25d0f3814700b}{copy\+\_\+board}} ()
+\item 
+void \mbox{\hyperlink{class_game__2048_af0362fdde12ea3120c740634d5c89f8f}{print\+\_\+board}} ()
+\item 
+void \mbox{\hyperlink{class_game__2048_a08accdd414f30808cafd73e5f81567a9}{move\+\_\+up}} ()
+\item 
+void \mbox{\hyperlink{class_game__2048_af653db8a8f6a065a3d0847dfff1d1290}{move\+\_\+down}} ()
+\item 
+void \mbox{\hyperlink{class_game__2048_ad244bdb1db0fc14862ab900937bd3f4a}{move\+\_\+left}} ()
+\item 
+void \mbox{\hyperlink{class_game__2048_adf4109569a4ab11a1232cf36bcd2d6c7}{move\+\_\+right}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game__2048_aacc38c633a8e35e1d4b0414851deedc0}{player\+\_\+board}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{class_game__2048_adf40b26ab19318d33374b9b57de8b880}{copy\+\_\+player\+\_\+board}} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{class_game__2048_a0b0268e696c5217439fbd5df0b1b434a}{score}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Клас \mbox{\hyperlink{class_game__2048}{Game\+\_\+2048}}. Този клас съдържа части от логиката на оригиналната игра 2048. Програмата представлява същата игра, без ефектите. Играе се в конзолата. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game__2048_a6716d8294e43f1ee65e6aaeeea512372}\label{class_game__2048_a6716d8294e43f1ee65e6aaeeea512372}} 
+\index{Game\_2048@{Game\_2048}!Game\_2048@{Game\_2048}}
+\index{Game\_2048@{Game\_2048}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{Game\_2048()}{Game\_2048()}}
+{\footnotesize\ttfamily Game\+\_\+2048\+::\+Game\+\_\+2048 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Създава полетата за игра. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game__2048_a36c1510f8b10745a22a25d0f3814700b}\label{class_game__2048_a36c1510f8b10745a22a25d0f3814700b}} 
+\index{Game\_2048@{Game\_2048}!copy\_board@{copy\_board}}
+\index{copy\_board@{copy\_board}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{copy\_board()}{copy\_board()}}
+{\footnotesize\ttfamily void Game\+\_\+2048\+::copy\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Копира оригиналните полета в копието. \mbox{\Hypertarget{class_game__2048_ac5fefa23f19af56cd7f09e555ea3b655}\label{class_game__2048_ac5fefa23f19af56cd7f09e555ea3b655}} 
+\index{Game\_2048@{Game\_2048}!copy\_move@{copy\_move}}
+\index{copy\_move@{copy\_move}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{copy\_move()}{copy\_move()}}
+{\footnotesize\ttfamily bool Game\+\_\+2048\+::copy\+\_\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Проверява дали може играта да продължи. \mbox{\Hypertarget{class_game__2048_ae5941776363aec6e7d058e972c9057ca}\label{class_game__2048_ae5941776363aec6e7d058e972c9057ca}} 
+\index{Game\_2048@{Game\_2048}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{game\_over()}{game\_over()}}
+{\footnotesize\ttfamily bool Game\+\_\+2048\+::game\+\_\+over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Проверява дали играта няма продължение. \mbox{\Hypertarget{class_game__2048_af653db8a8f6a065a3d0847dfff1d1290}\label{class_game__2048_af653db8a8f6a065a3d0847dfff1d1290}} 
+\index{Game\_2048@{Game\_2048}!move\_down@{move\_down}}
+\index{move\_down@{move\_down}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{move\_down()}{move\_down()}}
+{\footnotesize\ttfamily void Game\+\_\+2048\+::move\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Движение надолу, активира се с \char`\"{}\+S\char`\"{}. \mbox{\Hypertarget{class_game__2048_ad244bdb1db0fc14862ab900937bd3f4a}\label{class_game__2048_ad244bdb1db0fc14862ab900937bd3f4a}} 
+\index{Game\_2048@{Game\_2048}!move\_left@{move\_left}}
+\index{move\_left@{move\_left}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{move\_left()}{move\_left()}}
+{\footnotesize\ttfamily void Game\+\_\+2048\+::move\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Движение наляво, активира се с \char`\"{}\+A\char`\"{}. \mbox{\Hypertarget{class_game__2048_adf4109569a4ab11a1232cf36bcd2d6c7}\label{class_game__2048_adf4109569a4ab11a1232cf36bcd2d6c7}} 
+\index{Game\_2048@{Game\_2048}!move\_right@{move\_right}}
+\index{move\_right@{move\_right}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{move\_right()}{move\_right()}}
+{\footnotesize\ttfamily void Game\+\_\+2048\+::move\+\_\+right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Движение надясно, активира се с \char`\"{}\+D\char`\"{}. \mbox{\Hypertarget{class_game__2048_a08accdd414f30808cafd73e5f81567a9}\label{class_game__2048_a08accdd414f30808cafd73e5f81567a9}} 
+\index{Game\_2048@{Game\_2048}!move\_up@{move\_up}}
+\index{move\_up@{move\_up}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{move\_up()}{move\_up()}}
+{\footnotesize\ttfamily void Game\+\_\+2048\+::move\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Движение нагоре, активира се с \char`\"{}\+W\char`\"{}. \mbox{\Hypertarget{class_game__2048_af0362fdde12ea3120c740634d5c89f8f}\label{class_game__2048_af0362fdde12ea3120c740634d5c89f8f}} 
+\index{Game\_2048@{Game\_2048}!print\_board@{print\_board}}
+\index{print\_board@{print\_board}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{print\_board()}{print\_board()}}
+{\footnotesize\ttfamily void Game\+\_\+2048\+::print\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Извежда в конзолата полетата на играта. \mbox{\Hypertarget{class_game__2048_adff2b4020bf7cb07cf7de021ad849aaf}\label{class_game__2048_adff2b4020bf7cb07cf7de021ad849aaf}} 
+\index{Game\_2048@{Game\_2048}!Start@{Start}}
+\index{Start@{Start}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Game\+\_\+2048\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Стартира играта. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game__2048_adf40b26ab19318d33374b9b57de8b880}\label{class_game__2048_adf40b26ab19318d33374b9b57de8b880}} 
+\index{Game\_2048@{Game\_2048}!copy\_player\_board@{copy\_player\_board}}
+\index{copy\_player\_board@{copy\_player\_board}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{copy\_player\_board}{copy\_player\_board}}
+{\footnotesize\ttfamily int Game\+\_\+2048\+::copy\+\_\+player\+\_\+board\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Копие на полетата нужно за проверки по време на играта. \mbox{\Hypertarget{class_game__2048_aacc38c633a8e35e1d4b0414851deedc0}\label{class_game__2048_aacc38c633a8e35e1d4b0414851deedc0}} 
+\index{Game\_2048@{Game\_2048}!player\_board@{player\_board}}
+\index{player\_board@{player\_board}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{player\_board}{player\_board}}
+{\footnotesize\ttfamily int Game\+\_\+2048\+::player\+\_\+board\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+Полетата в които са разположени числата от играта. \mbox{\Hypertarget{class_game__2048_a0b0268e696c5217439fbd5df0b1b434a}\label{class_game__2048_a0b0268e696c5217439fbd5df0b1b434a}} 
+\index{Game\_2048@{Game\_2048}!score@{score}}
+\index{score@{score}!Game\_2048@{Game\_2048}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Game\+\_\+2048\+::score\hspace{0.3cm}{\ttfamily [private]}}
+
+Резултат достигнат до момента от играча. 
