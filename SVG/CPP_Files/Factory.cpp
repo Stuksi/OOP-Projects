@@ -4,17 +4,6 @@
 #include "..\Headers\Line.h"
 #include "..\Headers\Polygon.h"
 
-/**
- * @fn Color Factory::find_color()
- * Color recognision from string.
- * @fn std::string Factory::color_to_string()
- * Color to string.
- * @fn void Factory::to_lower_case()
- * Changes the string to lower case. 
- * @fn Shape* Factory::get_shape()
- * By given information, returns an object(shape).
- */
-
 void Factory::to_lower_case (std::string& type) {
     for (size_t i = 0; i < type.length(); i++)
     {

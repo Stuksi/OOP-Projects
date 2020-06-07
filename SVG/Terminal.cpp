@@ -65,7 +65,7 @@ int main() {
         } else if(action == "saveas") {
             CMD::saveas(shapes, info_storage, r_file);
         } else if (action == "help") {
-           CMD::help();
+            CMD::help();
         } else if (action == "/parameters") {
             CMD::parameters();
         } else {

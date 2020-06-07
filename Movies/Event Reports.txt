@@ -1,95 +1,102 @@
 Event Reports:
 -------------------------------------------------
 
-Date: 2020-06-15 Movie: Star Wars Frontier Hall: 4!
-Bought seats:
+Date: 2020-12-19 Movie: Merry Christmas Hall: 1!
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-15 Movie: John Wick 1 Hall: 3!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-15 Movie: Toy Story Hall: 2!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-15 Movie: Aquaman Hall: 1!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
-Date: 2020-06-14 Movie: Ratatouille Hall: 5!
-Bought seats:
+Date: 2020-06-15 Movie: Star Wars Frontier Hall: 4!
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-14 Movie: Avengers Age of Neutron Hall: 3!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-14 Movie: Avengers EndGame Hall: 4!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-14 Movie: Lord of the Rings Hall: 2!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-14 Movie: Assasins Creed Hall: 1!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
-Date: 2020-06-13 Movie: War Machines Hall: 5!
-Bought seats:
+Date: 2020-06-14 Movie: Ratatouille Hall: 5!
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-13 Movie: Iron Man 2 Hall: 1!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-13 Movie: The Green Book Hall: 3!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-13 Movie: Thor Ragnarok Hall: 2!
-Bought seats:
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-06-13 Movie: YU GI OH-GX Hall: 4!
-Bought seats:
+Booked seats:
+
+Event Reports:
+-------------------------------------------------
+
+Date: 2020-06-13 Movie: War Machines Hall: 5!
+Booked seats:
 
 Event Reports:
 -------------------------------------------------
 
 Date: 2020-01-01 Movie: New Years Eve Hall: 1!
-Bought seats:
-Row: 5 Col: 5
-Row: 3 Col: 4
-Row: 2 Col: 4
-Row: 1 Col: 4
-Row: 1 Col: 5
+Booked seats:
+
+Event Reports:
+-------------------------------------------------
+
+Date: 2020-12-01 Movie: Hungover Hall: 1!
+Booked seats:
 

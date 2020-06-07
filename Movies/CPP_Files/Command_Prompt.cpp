@@ -64,7 +64,24 @@ void CMD::saveas (std::ifstream& r_file, std::vector<std::string> info_storage, 
 }
 
 void CMD::help () {
-    
+    std::cout << "The following commands are supported:\n"
+            << "Main commands: \n"
+            << "   open <file>     Opens <file>\n"
+            << "   close           Closes currently opened file\n"
+            << "   save            Saves the currently open file\n"
+            << "   saveas <file>   Saves the currently open file in <file>\n"
+            << "   help            Prints this information\n"
+            << "   exit            Exits the program\n"
+            << "Movie - Tickets commands: \n"
+            << "   addevent <date> <hall> <name>                   Creates a new event\n"
+            << "   freeseats <date> <name>                         Outputs the free seats\n"
+            << "   book <row> <seat> <date> <name>                 Books a seat for an event\n"
+            << "   unbook <row> <seat> <date> <name>               Unbooks a seat for an event\n"
+            << "   buy <row> <seat> <date> <name>                  Buys a seat for an event\n"
+            << "   bookings [<date>] [<name>]                      Outputs information for all the booked seats\n"
+            << "   check <code>                                    Searches a seat by a given code\n"
+            << "   report <from> <to> [<hall>]                     Outputs information for all bought seats\n"
+            << std::endl;
 }
 
 void CMD::add_event (std::vector<std::string> info_storage, std::vector<Event>& events) {
